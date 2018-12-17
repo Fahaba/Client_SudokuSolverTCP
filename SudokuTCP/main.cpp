@@ -1,12 +1,17 @@
 #include <iostream>
 #include <string>
 #include <ws2tcpip.h>
+#include "Box.h"
 #pragma comment(lib, "ws2_32.lib")
 
 using namespace std; // maybe not good
 
 void main()
 {
+    Box *box = new Box("./fieldCFG.conf");
+    box->print();
+
+
     string ipAdress = "127.0.0.1";  // IP Adress of the server
     int port = 1337;               // listening port number on the server
 
