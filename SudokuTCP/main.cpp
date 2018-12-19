@@ -199,53 +199,119 @@ int main(int argc, char *argv[])
 
     //} while (initMessage.size() > 0);
 
-        BoxConnection *pboxCon = new BoxConnection("", port);
+        BoxConnection *pboxCon = new BoxConnection(*box, port);
+        
     std::thread threatObj(&BoxConnection::CreateServer, pboxCon);
-    
+    //Sleep(100);
+    //pboxCon->ConnectToOtherBoxes();
     cout << "HALLO" << endl;
+    //for (auto otherBox : box->m_otherBoxes)
+    //{
+    //    cout << "sending to " << otherBox.first.c_str() << endl;
+    //    SOCKET boxSocket = socket(AF_INET, SOCK_STREAM, 0);
+    //    sockaddr_in hint_box;
+    //    memset(&hint_box, 0, sizeof(sockaddr_in));
+    //    hint_box.sin_family = AF_INET;
+    //    hint_box.sin_port = htons(otherBox.second.port); // host to network short
+    //    //hint_box.sin_addr.S_un.S_addr = otherBox.second.ip.c_str();
+    //    inet_pton(AF_INET, otherBox.second.ip.c_str(), &hint_box.sin_addr); // inet pointer to string to number
+    //    memset(buf, 0, sizeof(buf));
+
+    //    /*sockaddr_in client_box;
+    //    memset(&client_box, 0, sizeof(sockaddr_in));
+    //    client_box.sin_family = AF_INET;
+    //    client_box.sin_port = htons(port);
+
+    //    bind(boxSocket, (sockaddr*)&client_box, sizeof(client_box));*/
+
+    //    int connResult = connect(boxSocket, (sockaddr*)&hint_box, sizeof(hint_box));
+    //    if (connResult == SOCKET_ERROR)
+    //    {
+    //        cerr << "cant connect to other box" << otherBox.first << "ERRORCODE: " << WSAGetLastError() << endl;
+    //        // cleanup on ERR
+    //        closesocket(boxSocket);
+    //        WSACleanup();
+    //        return -1;
+    //    }
+
+    //    int res = sendto(boxSocket, "asd\0\n", strlen("asd\0\n"), 0, (sockaddr*)&hint_box, sizeof(hint_box));
+    //    if (res == SOCKET_ERROR)
+    //    {
+    //        cerr << "cant connect to server ERR" << WSAGetLastError() << endl;
+    //        // cleanup on ERR
+    //        closesocket(sock);
+    //        WSACleanup();
+    //        return -1;
+    //    }
+    //
+    //}
+
+    // close everything
+    
+
+    // connect to other boxes
+    //SOCKET sock = m_socket;
+    //char buf[4096];
+    // connect to other boxes
     for (auto otherBox : box->m_otherBoxes)
     {
-        cout << "sending to " << otherBox.first.c_str() << endl;
+        if (otherBox.first == box->m_name)
+            continue;
+
+        std::cout << "sending to " << otherBox.first.c_str() << std::endl;
         SOCKET boxSocket = socket(AF_INET, SOCK_STREAM, 0);
         sockaddr_in hint_box;
         memset(&hint_box, 0, sizeof(sockaddr_in));
         hint_box.sin_family = AF_INET;
         hint_box.sin_port = htons(otherBox.second.port); // host to network short
+        //hint_box.sin_addr.S_un.S_addr = otherBox.second.ip.c_str();
         inet_pton(AF_INET, otherBox.second.ip.c_str(), &hint_box.sin_addr); // inet pointer to string to number
         memset(buf, 0, sizeof(buf));
 
-        sockaddr_in client;
-        memset(&client, 0, sizeof(sockaddr_in));
-        client.sin_family = PF_INET;
-        client.sin_port = htons(port);
+        sockaddr_in client_box;
+        memset(&client_box, 0, sizeof(sockaddr_in));
+        client_box.sin_family = AF_INET;
+        client_box.sin_port = htons(port);
 
-        bind(boxSocket, (sockaddr*)&client, sizeof(client));
+        bind(boxSocket, (sockaddr*)&client_box, sizeof(client_box));
 
         int connResult = connect(boxSocket, (sockaddr*)&hint_box, sizeof(hint_box));
         if (connResult == SOCKET_ERROR)
         {
-            cerr << "cant connect to server ERR" << WSAGetLastError() << endl;
+            std::cerr << "cant connect to other box" << otherBox.first << "ERRORCODE: " << WSAGetLastError() << std::endl;
             // cleanup on ERR
-            closesocket(boxSocket);
-            WSACleanup();
-            return -1;
+            //closesocket(boxSocket);
+            //WSACleanup();
+            //return;
+        }
+        else
+        {
+            std::cout << "connected to box" << std::endl;
         }
 
-        int res = sendto(boxSocket, "asd\0\n", strlen("asd\0\n"), 0, (sockaddr*)&hint_box, sizeof(hint_box));
+        std::string sendStr = otherBox.first.c_str();
+        sendStr.append("\0\n");
+        memset(&buf, 0, sizeof(buf));
+        strcpy_s(buf, sendStr.c_str());
+
+        int res = sendto(boxSocket, box->m_name.c_str(), sizeof(box->m_name) + 1, 0, (sockaddr*)&hint_box, sizeof(hint_box));
         if (res == SOCKET_ERROR)
         {
-            cerr << "cant connect to server ERR" << WSAGetLastError() << endl;
+            std::cerr << "cant connect to server ERR" << WSAGetLastError() << std::endl;
             // cleanup on ERR
             closesocket(sock);
             WSACleanup();
             return -1;
         }
+        else
+        {
+            std::cout << "Send " << box->m_name << " to box" << std::endl;
+        }
     }
 
-    // close everything
-    closesocket(sock);
-    WSACleanup();
 
     threatObj.join();
+    closesocket(sock);
+    WSACleanup();
     return 0;
 }

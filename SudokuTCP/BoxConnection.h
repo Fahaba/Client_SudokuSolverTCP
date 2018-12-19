@@ -4,6 +4,7 @@
 #include <WinSock2.h>
 #include <ws2tcpip.h>
 #include <iphlpapi.h>
+#include <sstream>
 #include "Box.h"
 
 #pragma comment(lib, "ws2_32.lib")
@@ -13,10 +14,12 @@
 class BoxConnection : public std::thread
 {
 public:
-    std::string m_ipAddr;
+    Box &m_box;
     int m_port;
-    BoxConnection(std::string ipAddr, int port) : m_port(port), m_ipAddr(ipAddr) {}
+    SOCKET m_socket;
+    BoxConnection(Box &box, int port) : m_port(port), m_box(box) {}
     void CreateServer();
     ~BoxConnection();
+    void ConnectToOtherBoxes();
 };
 
