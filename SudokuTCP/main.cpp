@@ -1,28 +1,89 @@
 #include <iostream>
 #include <string>
 #include <ws2tcpip.h>
+#include <iphlpapi.h>
+#include <stdlib.h>
+#include <sstream>
+#include <thread>
+#include <WinSock2.h>
 #include "Box.h"
+#include "BoxConnection.h"
 #pragma comment(lib, "ws2_32.lib")
+#pragma comment(lib, "iphlpapi.lib")
 
 using namespace std; // maybe not good
 
-void main()
+char sendbuf[256];
+
+int main(int argc, char *argv[])
 {
-    Box *box = new Box("./fieldCFG.conf");
+    if (argc < 5)
+    {
+        exit(-1);
+        return -1;
+    }
+    string boxName = argv[1];
+    string configPath = argv[2];
+    string hostAddr = argv[3];
+    int port = stoi(argv[4]);
+
+    Box *box = new Box("./fieldCFG.conf", boxName);
     box->print();
 
 
-    string ipAdress = "127.0.0.1";  // IP Adress of the server
-    int port = 1337;               // listening port number on the server
+    string ipAdress = hostAddr;  // IP Adress of the server
+          // listening port number on the server
+
+    // get local ip adress table
+    PMIB_IPADDRTABLE pIPAddrTable;
+    DWORD dwSize = 0;
+    DWORD dwRetVal = 0;
+    IN_ADDR IPAddre;
+
+    pIPAddrTable = (MIB_IPADDRTABLE *)malloc(sizeof(MIB_IPADDRTABLE));
+
+    if (pIPAddrTable)
+    {
+        if (GetIpAddrTable(pIPAddrTable, &dwSize, 0) ==
+            ERROR_INSUFFICIENT_BUFFER)
+        {
+            free(pIPAddrTable);
+            pIPAddrTable = (MIB_IPADDRTABLE *)malloc(dwSize);
+        }
+    }
+    if (pIPAddrTable == nullptr)
+    {
+        cerr << "coudlnt malloc for GetIpAddrTable" << endl;
+        exit(-1);
+    }
+
+    // get ipAddrTable
+    if ((dwRetVal = GetIpAddrTable(pIPAddrTable, &dwSize, 0)) != NO_ERROR)
+    {
+        // error
+        cerr << "GetIpAddr failed with error " << dwRetVal << endl;
+        exit(-1);
+    }
+
+    char ipbuf[INET_ADDRSTRLEN];
+    IPAddre.S_un.S_addr = (u_long)pIPAddrTable->table[0].dwAddr;
+    string localIPAddr = inet_ntop(AF_INET, &IPAddre, ipbuf, sizeof(ipbuf));
+
+    /*for (int i = 0; i < pIPAddrTable->dwNumEntries; i++)
+    {
+        IPAddre.S_un.S_addr = (u_long)pIPAddrTable->table[i].dwAddr;
+        cout << inet_ntop(AF_INET, &IPAddre, ipbuf, sizeof(ipbuf)) << endl;
+    }*/
 
     // initialize winsock
     WSAData data;
+    int res;
     WORD ver = MAKEWORD(2, 2);
     int wsResult = WSAStartup(ver, &data);
     if (wsResult != 0)
     {
         cerr << "cant start winsock, ERR " << wsResult << endl;
-        return;
+        return -1;
     }
     // create socket
 
@@ -32,15 +93,25 @@ void main()
     {
         cerr << "cant create socket ERR " << WSAGetLastError() << endl;
         WSACleanup();
-        return;
+        return -1;
     }
 
     // fill in a hint structure
     sockaddr_in hint;
+    memset(&hint, 0, sizeof(sockaddr_in));
     hint.sin_family = AF_INET;
-    hint.sin_port = htons(port); // host to network short
+    hint.sin_port = htons(4242); // host to network short
     inet_pton(AF_INET, ipAdress.c_str(), &hint.sin_addr); // inet pointer to string to number
     
+    
+    sockaddr_in client;
+    memset(&client, 0, sizeof(sockaddr_in));
+    client.sin_family = PF_INET;
+    client.sin_port = htons(port);
+
+    bind(sock, (sockaddr*)&client, sizeof(client));
+    
+
     // connect to server
     int connResult = connect(sock, (sockaddr*)&hint, sizeof(hint));
     if (connResult == SOCKET_ERROR)
@@ -49,7 +120,7 @@ void main()
         // cleanup on ERR
         closesocket(sock);
         WSACleanup();
-        return;
+        return -1;
     }
     else
     {
@@ -57,36 +128,124 @@ void main()
     }
     // do while loop to send and reveive data
     char buf[4096];
-    string userInput;
 
-    do
-    {
+    stringstream ss;
+    ss << boxName << "," << localIPAddr << "," << port << endl;
+    string initMessage = ss.str();
+    ss.str("");
+
+    //do
+    //{
         // wait for input
         cout << "> ";
-        getline(cin, userInput);
+        //getline(cin, userInput);
 
-        if (userInput.size() > 0)
+        if (initMessage.size() > 0)
         {
-            userInput += '\n';
+            //userInput += '\n';
             // send
-            int sendResult = send(sock, userInput.c_str(), sizeof(userInput), 0); // \0 at the end > +1
+            int sendResult = send(sock, initMessage.c_str(), sizeof(initMessage), 0); // \0 at the end > +1
             if (sendResult != SOCKET_ERROR)
             {
+                
                 // wait response
-                ZeroMemory(buf, 4096);
+                memset(&buf, 0, sizeof(buf));
                 int bytesReceived = recv(sock, buf, 4096, 0);
                 if (bytesReceived > 0)
                 {
                     // echo response to console
                     cout << "SERVER> " << string(buf, 0, bytesReceived) << endl;
+                    //stringstream ss;
+                    vector<string> boxNames = box->GetBoxNames();
+                    for (string boxStr : boxNames)
+                    {
+                        string boxName = boxStr;
+                        boxStr.append("\n");
+                        memset(&sendbuf, 0, sizeof(sendbuf));
+                        strcpy_s(sendbuf, boxStr.c_str());
+                        
+                        memset(&buf, 0, sizeof(buf));
+                        ss.str("");
+                        ss << boxStr << endl;
+                        //string boxQuery = "";
+                        //cin.getline(sendbuf, 256);
+                        //cout << boxQuery << "\n";
+                        
+                        int sendResult = send(sock, sendbuf, strlen(sendbuf), 0);
+                        if (sendResult != SOCKET_ERROR)
+                        {
+                            
+                            int bytesReceived;
+                                bytesReceived = recv(sock, buf, 4096, 0);
+                                if (bytesReceived > 0)
+                                {
+                                    cout << "SERVER> " << string(buf, 0, bytesReceived) << endl;
+                                    box->AddOtherBox(boxName, string(buf, 0, bytesReceived));
+                                }
+                        }
+                        
+                        Sleep(100);
+                    }
+                    // got all other box addresses now connect and query
+                    
+                    // start 
+                    // get other boxes
+                    // query
+                    // result
+                    
                 }
             }
         }
 
-    } while (userInput.size() > 0);
+    //} while (initMessage.size() > 0);
+
+        BoxConnection *pboxCon = new BoxConnection("", port);
+    std::thread threatObj(&BoxConnection::CreateServer, pboxCon);
+    
+    cout << "HALLO" << endl;
+    for (auto otherBox : box->m_otherBoxes)
+    {
+        cout << "sending to " << otherBox.first.c_str() << endl;
+        SOCKET boxSocket = socket(AF_INET, SOCK_STREAM, 0);
+        sockaddr_in hint_box;
+        memset(&hint_box, 0, sizeof(sockaddr_in));
+        hint_box.sin_family = AF_INET;
+        hint_box.sin_port = htons(otherBox.second.port); // host to network short
+        inet_pton(AF_INET, otherBox.second.ip.c_str(), &hint_box.sin_addr); // inet pointer to string to number
+        memset(buf, 0, sizeof(buf));
+
+        sockaddr_in client;
+        memset(&client, 0, sizeof(sockaddr_in));
+        client.sin_family = PF_INET;
+        client.sin_port = htons(port);
+
+        bind(boxSocket, (sockaddr*)&client, sizeof(client));
+
+        int connResult = connect(boxSocket, (sockaddr*)&hint_box, sizeof(hint_box));
+        if (connResult == SOCKET_ERROR)
+        {
+            cerr << "cant connect to server ERR" << WSAGetLastError() << endl;
+            // cleanup on ERR
+            closesocket(boxSocket);
+            WSACleanup();
+            return -1;
+        }
+
+        int res = sendto(boxSocket, "asd\0\n", strlen("asd\0\n"), 0, (sockaddr*)&hint_box, sizeof(hint_box));
+        if (res == SOCKET_ERROR)
+        {
+            cerr << "cant connect to server ERR" << WSAGetLastError() << endl;
+            // cleanup on ERR
+            closesocket(sock);
+            WSACleanup();
+            return -1;
+        }
+    }
 
     // close everything
     closesocket(sock);
     WSACleanup();
 
+    threatObj.join();
+    return 0;
 }

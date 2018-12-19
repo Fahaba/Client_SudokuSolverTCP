@@ -3,10 +3,10 @@
 #include <string>
 #include <fstream>
 #include <sstream>
-#include <vector>
 
-Box::Box(std::string cfgPath)
+Box::Box(std::string cfgPath, std::string name)
 {
+    m_name = name;
     Initialize(cfgPath);
 }
 
@@ -51,7 +51,7 @@ bool Box::LoadConfigFromFile(std::string path)
 
 void Box::print() 
 {
-    std::cout << "Box:" << std::endl;
+    std::cout << "Box: " << m_name << std::endl;
     std::cout << "-------------------" << std::endl;
     
    
@@ -64,4 +64,26 @@ void Box::print()
         std::cout << std::endl;
     }
     std::cout << "-------------------" << std::endl;
+}
+
+std::vector<std::string> Box::GetBoxNames()
+{
+    return m_boxNames;
+}
+
+void Box::AddOtherBox(std::string boxName, std::string boxAddr)
+{
+    GridMember newBox;
+    std::vector<std::string> tokens;
+    std::istringstream tok(boxAddr);
+    std::string token;
+    while (std::getline(tok, token, ','))
+    {
+        tokens.push_back(token);
+    }
+
+    newBox.ip = tokens[0];
+    newBox.port = stoi(tokens[1]);
+
+    m_otherBoxes.push_back(std::make_pair(boxName, newBox));
 }
