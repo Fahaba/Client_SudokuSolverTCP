@@ -37,9 +37,9 @@ void BoxConnection::CreateServer()
         std::cout << "listen() ERR " << WSAGetLastError() << std::endl;
 
 
-    fd_set master;
-    FD_ZERO(&master);
-    FD_SET(sock, &master);
+    //fd_set master;
+    FD_ZERO(&m_master);
+    FD_SET(sock, &m_master);
 
     char buf[4096];
 
@@ -49,7 +49,7 @@ void BoxConnection::CreateServer()
     while (true)
     {
 
-        fd_set copy = master;
+        fd_set copy = m_master;
         //fd_set copy = master;
 
         int socketCount = select(0, &copy, nullptr, nullptr, nullptr);
@@ -64,7 +64,7 @@ void BoxConnection::CreateServer()
                 SOCKET client = accept(sock, nullptr, nullptr);
 
                 // add new connection to list of connected clients
-                FD_SET(client, &master);
+                FD_SET(client, &m_master);
 
             }
             else
@@ -75,20 +75,12 @@ void BoxConnection::CreateServer()
                 {
                     //drop client
                     closesocket(s);
-                    FD_CLR(s, &master);
+                    FD_CLR(s, &m_master);
                 }
                 else
                 {
                     HandleMessages(buf);
                     std::cout << "receiving: " << buf << " " << std::endl;
-                    //for (int i = 0; i < master.fd_count; i++)
-                    //{
-                    //    SOCKET outSock = master.fd_array[i];
-                    //    if (outSock != sock && outSock != s)
-                    //    {
-                    //        send(outSock, "asd123\n\0", strlen("asd123\n\0")/*bytesIn*/, 0);
-                    //    }
-                    //}
                 }
                 // accept a new message
                 // send message to other clients ++ NOT LISTEN TO SOCKET
@@ -144,7 +136,10 @@ void BoxConnection::HandleMessages(char* buf)
             }
         }
     }
-    m_box.CalculatePossibleValues();
+    std::vector<newVal> newValues = m_box.CalculatePossibleValues();
+    // send new Values to neighbor boxes
+
+
 }
 
 void BoxConnection::ConnectToOtherBoxes()

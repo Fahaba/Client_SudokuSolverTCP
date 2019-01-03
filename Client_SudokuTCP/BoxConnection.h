@@ -25,5 +25,7 @@ public:
     void ConnectToOtherBoxes();
     void HandleMessages(char* buf);
     void CalculatePossibleValues();
+private:
+    fd_set m_master;
 };
 

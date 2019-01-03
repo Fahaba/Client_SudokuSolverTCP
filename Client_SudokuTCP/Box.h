@@ -19,6 +19,13 @@ struct GridMember
     int port;
 };
 
+struct newVal
+{
+    int x;
+    int y;
+    int val;
+};
+
 class Box
 {
 
@@ -51,7 +58,7 @@ public:
     std::vector<std::string> GetBoxNames();
     void SetValueInGrid(std::string boxName, int x, int y, int val);
     void AddOtherBox(std::string boxName, std::string boxAddr);
-    void CalculatePossibleValues();
+    std::vector<newVal> CalculatePossibleValues();
     std::pair<int, int> CalculateOffsetByName(std::string name);
     ~Box();
 

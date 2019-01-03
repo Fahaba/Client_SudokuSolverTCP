@@ -40,8 +40,9 @@ bool Box::LoadConfigFromFile(std::string path)
         int col = 0;
         for (; it != end ; ++it)
         {
-            m_cols[col][row] = std::stoi(it->c_str());
-            m_rows[row][col] = std::stoi(it->c_str());
+            SetValueInGrid(m_name, row, col, std::stoi(it->c_str()));
+            //m_cols[col][row] = std::stoi(it->c_str());
+            //m_rows[row][col] = std::stoi(it->c_str());
             m_boxField[row][col] = std::stoi(it->c_str());
             col++;
         }
@@ -135,111 +136,104 @@ void Box::SetValueInGrid(std::string boxName, int x, int y, int val)
             std::cout << m_rows[i][j];
         std::cout << std::endl;
     }
+    std::cout << std::endl;
 }
 
-void Box::CalculatePossibleValues()
+//struct newVal {
+//    int x;
+//    int y;
+//    int val;
+//};
+
+std::vector<newVal> Box::CalculatePossibleValues()
 {
+    // get offset in lines and columns for box
     std::pair<int, int> offsetxy = CalculateOffsetByName(m_name);
-
-    
-
-    for (int i = offsetxy.first; i < offsetxy.first + 3; i++)
+    std::vector<newVal> newValues;
+    // store possible values in arr
+    uint64_t possibleForCell[9];
+    uint64_t one = 0x0000000001;
+    // for each line in box
+    for (int boxRow = offsetxy.first; boxRow < offsetxy.first + 3; boxRow++)
     {
-        for (int cell = offsetxy.second; cell < offsetxy.second + 3; cell++)
+        // for each cell in line of box
+        for (int boxCell = offsetxy.second; boxCell < offsetxy.second + 3; boxCell++)
         {
-            if (m_rows[i][cell] > 0)
-                continue;
-
-            uint64_t possible = 0b1111111111;
-            uint64_t one = 0x0000000001;
-            // search vertical
-            for (int col = 0; col < m_cols[cell].size(); col++)
+            // if cell is filled dont proceed
+            if (m_rows[boxRow][boxCell])
             {
-                int val = m_cols[cell][col];
-                if (val && (possible & (one << val)))
-                {
-                    possible &= ~(one << val);
-                    //std::cout << "elim vert: " << val << std::endl;
-                }
+                possibleForCell[((boxRow-offsetxy.first)*3) + (boxCell%3)] = 0;
+                continue;
+            }
+            // bitmap to store possible values
+            uint64_t possibleValues = 0b1111111111;
+            
+
+            // search vertical direction and elim possible values
+            for (int vert = 0; vert < m_rows[boxRow].size(); vert++)
+            {
+                int val = m_rows[boxRow][vert];
+
+                if (val && (possibleValues & (one << val)))
+                    possibleValues &= ~(one << val);
             }
             // search horizontal
-            for (int row = 0; row < m_rows[i].size(); row++)
+            for (int hor = 0; hor < m_cols[boxCell].size(); hor++)
             {
-                int val = m_rows[i][row];
-                
-                if (val && (possible & (one << val)))
-                {
-                    possible &= ~(one << val);
-                    //std::cout << "elim hor: " << val << std::endl;
-                }
+                int val = m_cols[boxCell][hor];
+
+                if (val && (possibleValues & (one << val)))
+                    possibleValues &= ~(one << val);
             }
-            // search in own box 3x3
+            // search in own 3x3 box
             for (int box_i = offsetxy.first; box_i < offsetxy.first + 3; box_i++)
             {
                 for (int box_j = offsetxy.second; box_j < offsetxy.second + 3; box_j++)
                 {
                     int val = m_rows[box_i][box_j];
-                    if (val && possible & (one << val))
-                    {
-                        possible &= ~(one << val);
-                        //std::cout << "elim box: " << val << std::endl;
-                    }
+
+                    if (val && (possibleValues & (one << val)))
+                        possibleValues &= ~(one << val);
                 }
             }
-
-            for (int pos = 1; pos <= 9; pos++)
-            {
-                if (!(possible & (one << pos)))
-                    continue;
-
-                std::cout << "possible: " << pos << std::endl;
-
-                bool possib = false;
-                int x, y;
-                    for (int otherBox = 0; otherBox < 9; otherBox += 3)
-                    {
-                        //if (otherBox == offsetxy.first)
-                        //    continue;
-
-                        bool isIn3x3 = false;
-                        for (int box_i = otherBox; box_i < otherBox + 3; box_i++)
-                        {
-                            bool isInCell = false;
-                            
-                            for (int box_j = offsetxy.second; box_j < offsetxy.second + 3; box_j++)
-                            {
-                                if (box_i == i && m_rows[i][box_j] == 0)
-                                    continue;
-
-                                x = box_i;
-                                y = box_j;
-
-                                if (m_rows[box_i][box_j] == pos)
-                                    isInCell = true;
-
-                                if (m_cols[box_j][box_i] == pos)
-                                    isInCell = true;
-
-
-                            }
-                            isIn3x3 = isInCell;
-                        }
-                        possib = isIn3x3;
-                        std::cout << "isIn3x3?" << pos << ": " << isIn3x3 << std::endl;
-                    }
-                    if (possib)
-                    {
-                        std::cout << "found only candidate: " << pos << "  near  " << i << " " << cell << std::endl;
-                        m_rows[i][cell] = pos;
-                        m_cols[cell][i] = pos;
-                        //trigger send msg
-                    }
-                    else
-                    {
-
-                    }
-            }
-            std::cout << "end pos" << std::endl;
+            // all impossible values for this cell eliminated
+            // save in arr
+            possibleForCell[((boxRow-offsetxy.first) * 3) + (boxCell%3)] = possibleValues;
         }
     }
+
+    // locate 
+    for (int i = 0; i < 9; i++)
+    {
+        int count = 0;
+        if (!possibleForCell[i])
+            continue;
+
+        /*if (!(possibleForCell[i] & (one << (i + 1))))
+            continue;*/
+        int posDest = 0;
+        for (int pos = 0; pos < 9; pos++)
+        {
+            if (possibleForCell[pos] & (one << (i + 1)))
+            {
+                posDest = pos;
+                count++;
+            }
+        }
+
+        if (count != 1 || !posDest)
+            continue;
+
+        // set it
+        std::cout << "setting new value: " << i + 1 << std::endl;
+        SetValueInGrid(m_name, (posDest / (int)3), (posDest % 3), i + 1);
+        // send it to direct neighbors
+        newVal n;
+        n.val = i + 1;
+        n.x = posDest / (int)3;
+        n.y = posDest % 3;
+        newValues.push_back(n);
+    }
+
+    return newValues;
 }
