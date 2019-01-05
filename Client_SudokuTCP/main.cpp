@@ -105,7 +105,7 @@ int main(int argc, char *argv[])
     client.sin_port = htons(port);
 
     bind(sock, (sockaddr*)&client, sizeof(client));
-    
+    box->SetSocket(sock);
 
     // connect to server
     int connResult = connect(sock, (sockaddr*)&hint, sizeof(hint));
@@ -220,6 +220,7 @@ int main(int argc, char *argv[])
         else
         {
             std::cout << "connected to box" << std::endl;
+            box->AddConnection(otherBox.first, boxSocket, hint_box, client_box);
         }
 
         // send initial config to boxes
