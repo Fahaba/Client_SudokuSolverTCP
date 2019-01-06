@@ -206,8 +206,8 @@ std::vector<newVal> Box::CalculatePossibleValues()
     for (int i = 0; i < 9; i++)
     {
         int count = 0;
-        if (!possibleForCell[i])
-            continue;
+        /*if (!possibleForCell[i])
+            continue;*/
 
         /*if (!(possibleForCell[i] & (one << (i + 1))))
             continue;*/
