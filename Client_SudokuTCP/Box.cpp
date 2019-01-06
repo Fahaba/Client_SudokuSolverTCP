@@ -234,6 +234,31 @@ std::vector<newVal> Box::CalculatePossibleValues()
         n.y = posDest % 3;
         newValues.push_back(n);
     }
-
+    SendToNeighbors(newValues);
     return newValues;
+}
+
+void Box::AddConnection(std::string boxName, SOCKET s, sockaddr_in out, sockaddr_in local)
+{
+    ConnectionTCP con;
+    con.socket = s;
+    con.out = out;
+    con.local = local;
+
+    m_storedConnections.push_back(std::make_pair(boxName, con));
+}
+
+void Box::SendToNeighbors(std::vector<newVal> newValues)
+{
+    std::stringstream ss;
+    for (auto val : newValues)
+    {
+        ss = std::stringstream();
+        ss << m_name;
+        ss << "," << val.x << "," << val.y << "," << val.val << std::endl << "\0";
+        for (auto conn : m_storedConnections)
+        {
+            sendto(conn.second.socket, ss.str().c_str(), strlen(ss.str().c_str()), 0, (sockaddr*)&conn.second.out, sizeof(conn.second.out));
+        }
+    }
 }

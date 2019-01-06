@@ -139,7 +139,6 @@ void BoxConnection::HandleMessages(char* buf)
     std::vector<newVal> newValues = m_box.CalculatePossibleValues();
     // send new Values to neighbor boxes
 
-
 }
 
 void BoxConnection::ConnectToOtherBoxes()
