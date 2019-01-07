@@ -1,4 +1,4 @@
-#include "Box.h"
+﻿#include "Box.h"
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -41,8 +41,6 @@ bool Box::LoadConfigFromFile(std::string path)
         for (; it != end ; ++it)
         {
             SetValueInGrid(m_name, row, col, std::stoi(it->c_str()));
-            //m_cols[col][row] = std::stoi(it->c_str());
-            //m_rows[row][col] = std::stoi(it->c_str());
             m_boxField[row][col] = std::stoi(it->c_str());
             possibleForBox &= ~(1 << std::stoi(it->c_str()));
             col++;
@@ -87,18 +85,18 @@ void Box::InitializeGrid()
 void Box::print() 
 {
     std::cout << "Box: " << m_name << std::endl;
-    std::cout << "-------------------" << std::endl;
+    std::cout << "/-----|-----|-----|-----|-----|-----|-----|-----|-----\\" << std::endl;
     
-   
-    for (auto j : m_boxField)
+    for (auto j : m_rows)
     {
         std::cout << "|  ";
         for (auto i : j)
             std::cout << i << "  |  ";
 
         std::cout << std::endl;
+        std::cout << "|-----|-----|-----|-----|-----|-----|-----|-----|-----|";
+        std::cout << std::endl;
     }
-    std::cout << "-------------------" << std::endl;
 }
 
 std::vector<std::string> Box::GetBoxNames()
@@ -131,20 +129,9 @@ void Box::SetValueInGrid(std::string boxName, int x, int y, int val)
     m_cols[offsetxy.second + y]
         [offsetxy.first + x] = val;
 
-    for (int i = 0; i < m_rows.size(); i++)
-    {
-        for (int j = 0; j < m_rows[i].size(); j++)
-            std::cout << m_rows[i][j];
-        std::cout << std::endl;
-    }
-    std::cout << std::endl;
+    print();
 }
 
-//struct newVal {
-//    int x;
-//    int y;
-//    int val;
-//};
 
 std::vector<newVal> Box::CalculatePossibleValues()
 {

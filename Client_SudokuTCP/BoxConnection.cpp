@@ -50,10 +50,8 @@ void BoxConnection::CreateServer()
     {
 
         fd_set copy = m_master;
-        //fd_set copy = master;
 
         int socketCount = select(0, &copy, nullptr, nullptr, nullptr);
-        std::cout << socketCount << std::endl;
         for (int i = 0; i < socketCount; i++)
         {
             memset(buf, 0, sizeof(buf));
@@ -65,7 +63,6 @@ void BoxConnection::CreateServer()
 
                 // add new connection to list of connected clients
                 FD_SET(client, &m_master);
-
             }
             else
             {
@@ -85,7 +82,6 @@ void BoxConnection::CreateServer()
                 // accept a new message
                 // send message to other clients ++ NOT LISTEN TO SOCKET
             }
-
         }
     }
 }
@@ -99,7 +95,6 @@ void BoxConnection::HandleMessages(char* buf)
     if (buf != nullptr)
     {
         while (std::getline(ss, to, '\n')) {
-            //std::cout << "splitted -> " << to << std::endl;
 
             std::regex reg("^BOX_[A,D,G][1,4,7],[0-2],[0-2],[1-9]$");
             std::smatch match;
@@ -115,7 +110,6 @@ void BoxConnection::HandleMessages(char* buf)
                 while (std::getline(ss_to, msg_toc, ','))
                 {
                     parts.push_back(msg_toc);
-                    //std::cout << "tokens: " << msg_toc << std::endl;
 
                 }
                 // elim match to prevent loop
@@ -137,8 +131,6 @@ void BoxConnection::HandleMessages(char* buf)
         }
     }
     std::vector<newVal> newValues = m_box.CalculatePossibleValues();
-    // send new Values to neighbor boxes
-
 }
 
 void BoxConnection::ConnectToOtherBoxes()
@@ -210,9 +202,6 @@ void BoxConnection::ConnectToOtherBoxes()
                 }
             }
         }
-        
-
-        
     }
 }
 

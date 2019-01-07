@@ -6,6 +6,8 @@
 #include <sstream>
 #include <thread>
 #include <WinSock2.h>
+//#include <io.h>
+//#include <fcntl.h>
 #include "Box.h"
 #include "BoxConnection.h"
 #pragma comment(lib, "ws2_32.lib")
@@ -22,6 +24,9 @@ int main(int argc, char *argv[])
         exit(-1);
         return -1;
     }
+
+    //_setmode(_fileno(stdout), _O_U16TEXT);
+
     string boxName = argv[1];
     string configPath = argv[2];
     string hostAddr = argv[3];

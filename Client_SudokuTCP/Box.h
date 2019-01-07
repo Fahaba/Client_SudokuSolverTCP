@@ -84,9 +84,6 @@ private:
     void CheckOnlyPossibleInRow(int boxRow, int boxCell, std::vector<newVal> &newValues);
     void CheckOnlyPossibleInBox(int boxRow, int boxCell, std::vector<newVal> &newValues);
 
-
-
-
     SOCKET m_sock;
     
 protected:
