@@ -38,23 +38,22 @@ struct newVal
 
 class Box
 {
-
-
+    
 public:
 
     Box(std::string cfgPath, std::string name);
     typedef std::array<int, dimy> y;
     typedef std::array< y, dimx > BoxField; // 2d array
 
+    
     typedef std::array<int, 9> Cells;
-    typedef std::array<Cells, 9> Rows;
     typedef std::array<Cells, 9> Cols;
-
+    typedef std::array<Cells, 9> Rows;
 
     BoxField m_boxField;
     Rows m_rows;
     Cols m_cols;
-
+    uint64_t possibleForBox = 0b1111111111;
     std::string m_name;
     
     typedef std::vector<std::pair<std::string, BoxField>> BoxGrid;
@@ -81,6 +80,12 @@ private:
     bool LoadConfigFromFile(std::string path);
     void SendToNeighbors(std::vector<newVal> newValues);
     void InitializeGrid();
+    void CheckOnlyPossibleInColumn(int boxRow, int boxCell, std::vector<newVal> &newValues);
+    void CheckOnlyPossibleInRow(int boxRow, int boxCell, std::vector<newVal> &newValues);
+    void CheckOnlyPossibleInBox(int boxRow, int boxCell, std::vector<newVal> &newValues);
+
+
+
 
     SOCKET m_sock;
     

@@ -44,6 +44,7 @@ bool Box::LoadConfigFromFile(std::string path)
             //m_cols[col][row] = std::stoi(it->c_str());
             //m_rows[row][col] = std::stoi(it->c_str());
             m_boxField[row][col] = std::stoi(it->c_str());
+            possibleForBox &= ~(1 << std::stoi(it->c_str()));
             col++;
         }
 
@@ -156,18 +157,45 @@ std::vector<newVal> Box::CalculatePossibleValues()
     // for each line in box
     for (int boxRow = offsetxy.first; boxRow < offsetxy.first + 3; boxRow++)
     {
+        if (possibleForBox == 1)
+        {
+            break;
+        }
+
         // for each cell in line of box
         for (int boxCell = offsetxy.second; boxCell < offsetxy.second + 3; boxCell++)
         {
             // if cell is filled dont proceed
             if (m_rows[boxRow][boxCell])
             {
-                possibleForCell[((boxRow-offsetxy.first)*3) + (boxCell%3)] = 0;
+                possibleForCell[((boxRow - offsetxy.first) * 3) + (boxCell % 3)] = 0;
+                continue;
+            }
+
+            CheckOnlyPossibleInBox(boxRow, boxCell, newValues);
+            if (m_rows[boxRow][boxCell])
+            {
+                possibleForCell[((boxRow - offsetxy.first) * 3) + (boxCell % 3)] = 0;
+                continue;
+            }
+
+            CheckOnlyPossibleInColumn(boxRow, boxCell, newValues);
+            // recheck
+            if (m_rows[boxRow][boxCell])
+            {
+                possibleForCell[((boxRow - offsetxy.first) * 3) + (boxCell % 3)] = 0;
+                continue;
+            }
+            CheckOnlyPossibleInRow(boxRow, boxCell, newValues);
+            // recheck
+            if (m_rows[boxRow][boxCell])
+            {
+                possibleForCell[((boxRow - offsetxy.first) * 3) + (boxCell % 3)] = 0;
                 continue;
             }
             // bitmap to store possible values
             uint64_t possibleValues = 0b1111111111;
-            
+
 
             // search vertical direction and elim possible values
             for (int vert = 0; vert < m_rows[boxRow].size(); vert++)
@@ -198,44 +226,186 @@ std::vector<newVal> Box::CalculatePossibleValues()
             }
             // all impossible values for this cell eliminated
             // save in arr
-            possibleForCell[((boxRow-offsetxy.first) * 3) + (boxCell%3)] = possibleValues;
+            possibleForCell[((boxRow - offsetxy.first) * 3) + (boxCell % 3)] = possibleValues;
         }
     }
 
-    // locate 
-    for (int i = 0; i < 9; i++)
-    {
-        int count = 0;
-        /*if (!possibleForCell[i])
-            continue;*/
-
-        /*if (!(possibleForCell[i] & (one << (i + 1))))
-            continue;*/
-        int posDest = 0;
-        for (int pos = 0; pos < 9; pos++)
-        {
-            if (possibleForCell[pos] & (one << (i + 1)))
-            {
-                posDest = pos;
-                count++;
-            }
-        }
-
-        if (count != 1 || !posDest)
-            continue;
-
-        // set it
-        std::cout << "setting new value: " << i + 1 << std::endl;
-        SetValueInGrid(m_name, (posDest / (int)3), (posDest % 3), i + 1);
-        // send it to direct neighbors
-        newVal n;
-        n.val = i + 1;
-        n.x = posDest / (int)3;
-        n.y = posDest % 3;
-        newValues.push_back(n);
-    }
     SendToNeighbors(newValues);
     return newValues;
+}
+
+void Box::CheckOnlyPossibleInColumn(int boxRow, int boxCell, std::vector<newVal> &newValues)
+{
+    // check only possible in col
+    for (int testVal = 1; testVal <= 9; testVal++)
+    {
+        if (!(possibleForBox & (1 << testVal)))
+            continue;
+
+        bool possible = true;
+        int count = 0;
+        for (int vert = 0; vert < 9; vert++)
+        {
+            if (!possible)
+                break;
+
+            if (count > 1)
+                break;
+
+            if (m_rows[vert][boxCell] > 0)
+            {
+                // already set in column
+                if (m_rows[vert][boxCell] == testVal)
+                {
+                    count = 0;
+                    possible = false;
+                    break;
+                }
+                continue;
+            }
+
+            int countBox = 0;
+            // search in 3x3
+            for (int box_i = vert - vert % 3; box_i < vert - vert % 3 + 3; box_i++)
+            {
+                for (int box_j = boxCell - boxCell % 3; box_j < boxCell - boxCell % 3 + 3; box_j++)
+                {
+                    if (m_rows[box_i][box_j] == testVal)
+                        countBox++;
+                }
+            }
+
+            // if none found in box -> search horizontally
+            if (!countBox)
+            {
+                int countHor = 0;
+                for (int hor = 0; hor < 9; hor++)
+                {
+                    if (vert == boxRow && m_rows[vert][hor] == testVal)
+                    {
+                        countHor++;
+                        count = 0;
+                        possible = false;
+                    }
+                    if (m_rows[vert][hor] == testVal)
+                        countHor++;
+                }
+                // if not found horizontally -> possible in this cell
+                if (!countHor)
+                    count++;
+            }
+        }
+        if (count == 1)
+        {
+            newVal n;
+            n.val = testVal;
+            n.x = boxRow % 3;
+            n.y = boxCell % 3;
+            SetValueInGrid(m_name, n.x, n.y, n.val);
+            newValues.push_back(n);
+            possibleForBox &= ~(1 << n.val);
+            break;
+        }
+    }
+}
+
+void Box::CheckOnlyPossibleInRow(int boxRow, int boxCell, std::vector<newVal> &newValues)
+{
+    // check only possible in col
+    for (int testVal = 1; testVal <= 9; testVal++)
+    {
+        if (!(possibleForBox & (1 << testVal)))
+            continue;
+
+        bool possible = true;
+        int count = 0;
+        for (int hor = 0; hor < 9; hor++)
+        {
+            if (!possible)
+                break;
+
+            if (count > 1)
+                break;
+
+            if (m_cols[hor][boxRow] > 0)
+            {
+                // already set in row
+                if (m_cols[hor][boxRow] == testVal)
+                {
+                    count = 0;
+                    possible = false;
+                    break;
+                }
+                continue;
+            }
+
+            int countBox = 0;
+            // search in 3x3
+            for (int box_i = hor - hor % 3; box_i < hor - hor % 3 + 3; box_i++)
+            {
+                for (int box_j = boxRow - boxRow % 3; box_j < boxRow - boxRow % 3 + 3; box_j++)
+                {
+                    if (m_cols[box_i][box_j] == testVal)
+                        countBox++;
+                }
+            }
+
+            // if none found in box -> search vertically
+            if (!countBox)
+            {
+                int countVert = 0;
+                for (int vert = 0; vert < 9; vert++)
+                {
+                    if (hor == boxCell && m_cols[boxCell][vert] == testVal)
+                    {
+                        countVert++;
+                        count = 0;
+                        possible = false;
+                    }
+                    if (m_cols[hor][vert] == testVal)
+                        countVert++;
+                }
+                // if not found vertically -> possible in this cell
+                if (!countVert)
+                    count++;
+            }
+        }
+        if (count == 1)
+        {
+            newVal n;
+            n.val = testVal;
+            n.x = boxRow % 3;
+            n.y = boxCell % 3;
+            SetValueInGrid(m_name, n.x, n.y, n.val);
+            newValues.push_back(n);
+            possibleForBox &= ~(1 << n.val);
+            break;
+        }
+    }
+}
+
+void Box::CheckOnlyPossibleInBox(int boxRow, int boxCell, std::vector<newVal> &newValues)
+{
+    int count = 0;
+    int value = 0;
+    for (int i = 1; i <= 9; i++)
+    {
+        if (possibleForBox & (1 << i))
+        {
+            count++;
+            value = i;
+        }
+    }
+    if (count == 1)
+    {
+        newVal n;
+        n.val = value;
+        n.x = boxRow % 3;
+        n.y = boxCell % 3;
+        SetValueInGrid(m_name, n.x, n.y, n.val);
+        newValues.push_back(n);
+        possibleForBox &= ~(1 << n.val);
+    }
 }
 
 void Box::AddConnection(std::string boxName, SOCKET s, sockaddr_in out, sockaddr_in local)
