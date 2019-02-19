@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<rss version="2.0" >
+ <channel>
+  <title>Webmasterparadies.de RSS-Feed</title>
+  <link>http://localhost/rss.xml</link>
+  <description>Alles für deinen Web-Auftritt</description>
+  <language>de-de</language>
+  <copyright>1998-2017 Webmasterparadies.de</copyright>
+  
+  <item>
+   <title>Eigenen RSS-Feed erstellen</title>
+   <link>http://localhost/</link>
+   <description>Ich erkläre dir im Folgenden, wie du einen eigenen RSS-Feed erstellen kannst.</description>
+  </item>
+  <pubDate>Mon, 24 Nov 2008 16:46:36 GMT</pubDate>
+ 
+  <item>
+   <title>feed2</title>
+   <link>http://localhost/</link>
+   <description>bla</description>
+  </item>
+  <pubDate>Mon, 25 Nov 2008 16:46:37 GMT</pubDate>
+ </channel>
+</rss>
