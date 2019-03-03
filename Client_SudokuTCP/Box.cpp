@@ -1,8 +1,5 @@
 ﻿#include "Box.h"
-#include <iostream>
-#include <string>
-#include <fstream>
-#include <sstream>
+
 
 Box::Box(std::string cfgPath, std::string name)
 {
@@ -40,10 +37,22 @@ bool Box::LoadConfigFromFile(std::string path)
         int col = 0;
         for (; it != end ; ++it)
         {
-            SetValueInGrid(m_name, row, col, std::stoi(it->c_str()));
-            m_boxField[row][col] = std::stoi(it->c_str());
-            possibleForBox &= ~(1 << std::stoi(it->c_str()));
-            col++;
+			int val = std::stoi(it->c_str());
+            SetValueInGrid(m_name, row, col, val);
+			
+			if (val)
+			{
+				newVal toSend;
+				toSend.x = row;
+				toSend.y = col;
+				toSend.val = val;
+				SendToNeighbors(std::vector<newVal>{toSend});
+			}
+			
+            
+			m_boxField[row][col] = val;
+			//possibleForBox &= ~(1 << val);
+			col++;
         }
 
         row++;
@@ -124,12 +133,35 @@ void Box::AddOtherBox(std::string boxName, std::string boxAddr)
 void Box::SetValueInGrid(std::string boxName, int x, int y, int val)
 {
     std::pair<int, int> offsetxy = CalculateOffsetByName(boxName);
-    m_rows[offsetxy.first + x]
-        [offsetxy.second + y] = val;
-    m_cols[offsetxy.second + y]
-        [offsetxy.first + x] = val;
 
-    print();
+	int x_intern = offsetxy.first + x;
+	int y_intern = offsetxy.second + y;
+	
+	// if set already dont set and send it again
+	if (m_rows[x_intern][y_intern] > 0)
+		return;
+
+	if (boxName == m_name)
+		possibleForBox &= ~(1 << val);
+	
+	m_rows[x_intern]
+        [y_intern] = val;
+    m_cols[y_intern]
+        [x_intern] = val;
+	
+	/*if (val)
+	{
+		newVal toSend;
+		toSend.x = x;
+		toSend.y = y;
+		toSend.val = val;
+		SendToNeighbors(std::vector<newVal>{toSend});
+		print();
+	}*/
+
+	
+	CalculatePossibleValues();
+	print();
 }
 
 
@@ -290,7 +322,7 @@ void Box::CheckOnlyPossibleInColumn(int boxRow, int boxCell, std::vector<newVal>
             n.y = boxCell % 3;
             SetValueInGrid(m_name, n.x, n.y, n.val);
             newValues.push_back(n);
-            possibleForBox &= ~(1 << n.val);
+            //possibleForBox &= ~(1 << n.val);
             break;
         }
     }
@@ -365,7 +397,7 @@ void Box::CheckOnlyPossibleInRow(int boxRow, int boxCell, std::vector<newVal> &n
             n.y = boxCell % 3;
             SetValueInGrid(m_name, n.x, n.y, n.val);
             newValues.push_back(n);
-            possibleForBox &= ~(1 << n.val);
+            //possibleForBox &= ~(1 << n.val);
             break;
         }
     }
@@ -391,7 +423,7 @@ void Box::CheckOnlyPossibleInBox(int boxRow, int boxCell, std::vector<newVal> &n
         n.y = boxCell % 3;
         SetValueInGrid(m_name, n.x, n.y, n.val);
         newValues.push_back(n);
-        possibleForBox &= ~(1 << n.val);
+        //possibleForBox &= ~(1 << n.val);
     }
 }
 
@@ -408,14 +440,17 @@ void Box::AddConnection(std::string boxName, SOCKET s, sockaddr_in out, sockaddr
 void Box::SendToNeighbors(std::vector<newVal> newValues)
 {
     std::stringstream ss;
+
     for (auto val : newValues)
     {
         ss = std::stringstream();
+		ss << "/HandleAddFeed.php?message=";
         ss << m_name;
-        ss << "," << val.x << "," << val.y << "," << val.val << std::endl << "\0";
-        for (auto conn : m_storedConnections)
-        {
-            sendto(conn.second.socket, ss.str().c_str(), strlen(ss.str().c_str()), 0, (sockaddr*)&conn.second.out, sizeof(conn.second.out));
-        }
+        ss << "," << val.x << "," << val.y << "," << val.val;
+            //sendto(conn.second.socket, ss.str().c_str(), strlen(ss.str().c_str()), 0, (sockaddr*)&conn.second.out, sizeof(conn.second.out));
+		std::string response;
+		std::cout << "bin hier" << std::endl;
+		HttpReq("GET", "127.0.0.1", 80, ss.str().c_str(), NULL, response);
+		// do s.th with response?
     }
 }

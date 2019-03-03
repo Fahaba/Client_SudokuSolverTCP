@@ -22,11 +22,17 @@
     <ClCompile Include="..\Box.cpp" />
     <ClCompile Include="..\BoxConnection.cpp" />
     <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\HttpReq.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Box.h" />
     <ClInclude Include="..\BoxConnection.h" />
-    <ClInclude Include="..\Header.h" />
+    <ClInclude Include="..\HttpReq.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RssReaderCPP\C++\RssReader.vcxproj">
+      <Project>{0f8e8977-4354-44dc-a8dd-b048f53d0d86}</Project>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -79,14 +85,22 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\RssReaderCPP\C++;$(SolutionDir)\..\cpr-master\lib\Debug;$(SolutionDir)\..\cpr-master\include</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\UniProjekte\cpr-master\include\;E:\UniProjekte\cpr-master\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ShowProgress>LinkVerbose</ShowProgress>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>

@@ -1,9 +1,6 @@
 #include <string>
 #include <iostream>
 #include <thread>
-#include <WinSock2.h>
-#include <ws2tcpip.h>
-#include <iphlpapi.h>
 #include <sstream>
 #include "Box.h"
 #include <stdlib.h> 

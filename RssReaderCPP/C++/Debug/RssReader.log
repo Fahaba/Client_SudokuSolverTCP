@@ -1,0 +1,15 @@
+﻿  RssReader.cpp
+e:\uniprojekte\rssreadercpp\c++\rssreader.cpp(267): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_wstring.h(123): note: Siehe Deklaration von "wcscpy"
+e:\uniprojekte\rssreadercpp\c++\rssreader.cpp(297): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(506): note: Siehe Deklaration von "localtime"
+e:\uniprojekte\rssreadercpp\c++\rssreader.cpp(299): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_wstring.h(123): note: Siehe Deklaration von "wcscpy"
+e:\uniprojekte\rssreadercpp\c++\rssreader.cpp(305): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_wstring.h(226): note: Siehe Deklaration von "wcstok"
+e:\uniprojekte\rssreadercpp\c++\rssreader.cpp(313): warning C4996: 'wcstok': This function or variable may be unsafe. Consider using wcstok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_wstring.h(226): note: Siehe Deklaration von "wcstok"
+e:\uniprojekte\rssreadercpp\c++\rssreader.cpp(226): warning C4101: "buff": Unreferenzierte lokale Variable
+e:\uniprojekte\rssreadercpp\c++\rssreader.cpp(396): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdlib.h(1015): note: Siehe Deklaration von "wcstombs"
+  RssReader.vcxproj -> E:\UniProjekte\Client_SudokuTCP\Debug\RssReader.lib

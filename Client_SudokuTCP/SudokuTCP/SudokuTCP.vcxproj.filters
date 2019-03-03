@@ -24,15 +24,18 @@
     <ClCompile Include="..\main.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="..\HttpReq.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Box.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="..\Header.h">
+    <ClInclude Include="..\BoxConnection.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="..\BoxConnection.h">
+    <ClInclude Include="..\HttpReq.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LocalDebuggerCommandArguments>BOX_D1 ./fieldCFG4.conf 127.0.0.1 1330</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>BOX_G1 ./fieldCFG7.conf 127.0.0.1 1331</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
 </Project>

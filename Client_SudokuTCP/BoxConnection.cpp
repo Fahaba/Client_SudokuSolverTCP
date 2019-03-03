@@ -14,7 +14,7 @@ void BoxConnection::CreateServer()
         exit(-1);
     }
     // create socket
-
+	
     // INTERNET ADRESS STYLE FAMILY AF_INET[6]
     SOCKET sock = socket(AF_INET, SOCK_STREAM, 0);
     if (sock == INVALID_SOCKET)

@@ -1,9 +1,27 @@
 #pragma once
+
 #include <array>
 #include <vector>
+#ifndef WINSOCK2_H_
+#define WINSOCK2_H_
 #include <WinSock2.h>
+#endif
+#ifndef WINSOCK_H_
+#define WINSOCK_H_
+#endif
+#ifndef WS2TCPIP_H_
+#define WS2TCPIP_H_
 #include <ws2tcpip.h>
+#endif
+#ifndef IPHLPAPI_H_
+#define IPHLPAPI_H_
 #include <iphlpapi.h>
+#endif
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <sstream>
+#include "HttpReq.h"
 // move this to config or s.th.
 #define dimx 3
 #define dimy 3
@@ -89,4 +107,3 @@ private:
 protected:
     
 };
-
