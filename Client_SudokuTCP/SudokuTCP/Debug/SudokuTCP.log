@@ -1,11 +1,11 @@
 ﻿  Box.cpp
-e:\uniprojekte\client_sudokutcp\box.cpp(83): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
-e:\uniprojekte\client_sudokutcp\box.cpp(85): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
-e:\uniprojekte\client_sudokutcp\box.cpp(220): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
-e:\uniprojekte\client_sudokutcp\box.cpp(228): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
-e:\uniprojekte\client_sudokutcp\box.cpp(261): warning C4334: "<<": Das Ergebnis der 32-Bit-Verschiebung wurde implizit in 64 Bits konvertiert. (War eine 64-Bit-Verschiebung vorgesehen?)
-e:\uniprojekte\client_sudokutcp\box.cpp(336): warning C4334: "<<": Das Ergebnis der 32-Bit-Verschiebung wurde implizit in 64 Bits konvertiert. (War eine 64-Bit-Verschiebung vorgesehen?)
-e:\uniprojekte\client_sudokutcp\box.cpp(412): warning C4334: "<<": Das Ergebnis der 32-Bit-Verschiebung wurde implizit in 64 Bits konvertiert. (War eine 64-Bit-Verschiebung vorgesehen?)
+e:\uniprojekte\client_sudokutcp\box.cpp(89): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+e:\uniprojekte\client_sudokutcp\box.cpp(91): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+e:\uniprojekte\client_sudokutcp\box.cpp(226): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+e:\uniprojekte\client_sudokutcp\box.cpp(234): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+e:\uniprojekte\client_sudokutcp\box.cpp(267): warning C4334: "<<": Das Ergebnis der 32-Bit-Verschiebung wurde implizit in 64 Bits konvertiert. (War eine 64-Bit-Verschiebung vorgesehen?)
+e:\uniprojekte\client_sudokutcp\box.cpp(342): warning C4334: "<<": Das Ergebnis der 32-Bit-Verschiebung wurde implizit in 64 Bits konvertiert. (War eine 64-Bit-Verschiebung vorgesehen?)
+e:\uniprojekte\client_sudokutcp\box.cpp(418): warning C4334: "<<": Das Ergebnis der 32-Bit-Verschiebung wurde implizit in 64 Bits konvertiert. (War eine 64-Bit-Verschiebung vorgesehen?)
   LINK : 0 neue Module und 1 (von 57) Modulen wurden seit der letzten Verknüpfung geändert.
   Nicht-SAFESEH-Image wird generiert.
   Durchlauf 2 gestartet.

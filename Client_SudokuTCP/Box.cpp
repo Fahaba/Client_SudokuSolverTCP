@@ -19,24 +19,26 @@ void Box::Initialize(std::string cfgPath)
 
 bool Box::LoadConfigFromFile(std::string path) 
 {
-    std::ifstream inFile;
+	// this is no file anymore
+		//std::string line = "";
+    /*std::ifstream inFile;
     inFile.open(path);
     std::string line = "";
     if (!inFile)
     {
         return false;
         exit(1);
-    }
+    }*/
 
     int row = 0;
-    while (std::getline(inFile, line))
-    {
-        std::istringstream iss(line);
+    
+        std::istringstream iss(path);
         std::istream_iterator<std::string> it(iss);
         std::istream_iterator<std::string> end;
         int col = 0;
         for (; it != end ; ++it)
         {
+
 			int val = std::stoi(it->c_str());
             SetValueInGrid(m_name, row, col, val);
 			
@@ -53,10 +55,14 @@ bool Box::LoadConfigFromFile(std::string path)
 			m_boxField[row][col] = val;
 			//possibleForBox &= ~(1 << val);
 			col++;
+			if (col % 3 == 0)
+				row++;
+
+			col = col % 3;
         }
 
-        row++;
-    }
+        //row++;
+
     m_boxGrid.push_back(std::make_pair(m_name, m_boxField));
     InitializeGrid();
     return true;

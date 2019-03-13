@@ -86,11 +86,12 @@ int main(int argc, char *argv[])
     //_setmode(_fileno(stdout), _O_U16TEXT);
 
     string boxName = argv[1];
-    string configPath = argv[2];
+    //string configPath = argv[2];
+	string configStr = argv[2];
     string hostAddr = argv[3];
     int port = stoi(argv[4]);
 
-    Box *box = new Box(configPath, boxName);
+    Box *box = new Box(configStr, boxName);
     box->print();
 
 	// setup rss reader
