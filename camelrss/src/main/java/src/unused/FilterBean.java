@@ -1,3 +1,5 @@
+package src.unused;
+
 import com.sun.syndication.feed.synd.SyndEntry;
 import com.sun.syndication.feed.synd.SyndFeed;
 import org.apache.camel.Body;
