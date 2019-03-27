@@ -443,9 +443,31 @@ void Box::AddConnection(std::string boxName, SOCKET s, sockaddr_in out, sockaddr
     m_storedConnections.push_back(std::make_pair(boxName, con));
 }
 
-void Box::SendToNeighbors(std::vector<newVal> newValues)
+void Box::SendToNeighbors(std::vector<newVal> newValues, bool finished)
 {
     std::stringstream ss;
+
+	if (finished)
+	{
+		ss = std::stringstream();
+		ss << "/HandleAddFeed.php?message=";
+		ss << m_name;
+		ss << ",";
+
+		std::pair<int, int> offsetxy = CalculateOffsetByName(m_name);
+
+		for (int x = offsetxy.first; x < offsetxy.first + 3; x++)
+		{
+			for (int y = offsetxy.second; y < offsetxy.second + 3; y++)
+				ss << m_rows[x][y];
+		}
+
+		std::string response;
+		HttpReq("GET", "127.0.0.1", 80, ss.str().c_str(), NULL, response);
+
+		// close box
+		exit(1);
+	}
 
     for (auto val : newValues)
     {
@@ -453,10 +475,8 @@ void Box::SendToNeighbors(std::vector<newVal> newValues)
 		ss << "/HandleAddFeed.php?message=";
         ss << m_name;
         ss << "," << val.x << "," << val.y << "," << val.val;
-            //sendto(conn.second.socket, ss.str().c_str(), strlen(ss.str().c_str()), 0, (sockaddr*)&conn.second.out, sizeof(conn.second.out));
 		std::string response;
-		std::cout << "bin hier" << std::endl;
-		HttpReq("GET", "127.0.0.1", 1234, ss.str().c_str(), NULL, response);
+		HttpReq("GET", "127.0.0.1", 80, ss.str().c_str(), NULL, response);
 		// do s.th with response?
     }
 }

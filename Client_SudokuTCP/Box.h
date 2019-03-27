@@ -96,7 +96,7 @@ public:
 private:
     void Initialize(std::string cfgPath);
     bool LoadConfigFromFile(std::string path);
-    void SendToNeighbors(std::vector<newVal> newValues);
+    void SendToNeighbors(std::vector<newVal> newValues, bool finished = false);
     void InitializeGrid();
     void CheckOnlyPossibleInColumn(int boxRow, int boxCell, std::vector<newVal> &newValues);
     void CheckOnlyPossibleInRow(int boxRow, int boxCell, std::vector<newVal> &newValues);
