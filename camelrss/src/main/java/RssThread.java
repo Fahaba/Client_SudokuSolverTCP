@@ -13,6 +13,7 @@ public class RssThread extends Thread {
         context = new DefaultCamelContext();
         try {
             context.addRoutes(new RssToFeedParser(mqtt_ip, mqtt_port, boxName));
+            context.start();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -22,7 +23,7 @@ public class RssThread extends Thread {
 
         while(true) {
             try {
-                context.start();
+                //context.start();
                 sleep(5000);
             } catch (Exception e) {
                 e.printStackTrace();

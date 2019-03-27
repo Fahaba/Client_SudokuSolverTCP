@@ -1,15 +1,1942 @@
 ﻿  Box.cpp
-e:\uniprojekte\client_sudokutcp\box.cpp(89): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
-e:\uniprojekte\client_sudokutcp\box.cpp(91): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
-e:\uniprojekte\client_sudokutcp\box.cpp(226): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
-e:\uniprojekte\client_sudokutcp\box.cpp(234): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
-e:\uniprojekte\client_sudokutcp\box.cpp(267): warning C4334: "<<": Das Ergebnis der 32-Bit-Verschiebung wurde implizit in 64 Bits konvertiert. (War eine 64-Bit-Verschiebung vorgesehen?)
-e:\uniprojekte\client_sudokutcp\box.cpp(342): warning C4334: "<<": Das Ergebnis der 32-Bit-Verschiebung wurde implizit in 64 Bits konvertiert. (War eine 64-Bit-Verschiebung vorgesehen?)
-e:\uniprojekte\client_sudokutcp\box.cpp(418): warning C4334: "<<": Das Ergebnis der 32-Bit-Verschiebung wurde implizit in 64 Bits konvertiert. (War eine 64-Bit-Verschiebung vorgesehen?)
-  LINK : 0 neue Module und 1 (von 57) Modulen wurden seit der letzten Verknüpfung geändert.
+c:\users\fahas\desktop\client_sudokusolvertcp\client_sudokutcp\box.cpp(89): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\fahas\desktop\client_sudokusolvertcp\client_sudokutcp\box.cpp(91): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\fahas\desktop\client_sudokusolvertcp\client_sudokutcp\box.cpp(226): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\fahas\desktop\client_sudokusolvertcp\client_sudokutcp\box.cpp(234): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\fahas\desktop\client_sudokusolvertcp\client_sudokutcp\box.cpp(267): warning C4334: "<<": Das Ergebnis der 32-Bit-Verschiebung wurde implizit in 64 Bits konvertiert. (War eine 64-Bit-Verschiebung vorgesehen?)
+c:\users\fahas\desktop\client_sudokusolvertcp\client_sudokutcp\box.cpp(342): warning C4334: "<<": Das Ergebnis der 32-Bit-Verschiebung wurde implizit in 64 Bits konvertiert. (War eine 64-Bit-Verschiebung vorgesehen?)
+c:\users\fahas\desktop\client_sudokusolvertcp\client_sudokutcp\box.cpp(418): warning C4334: "<<": Das Ergebnis der 32-Bit-Verschiebung wurde implizit in 64 Bits konvertiert. (War eine 64-Bit-Verschiebung vorgesehen?)
+  BoxConnection.cpp
+c:\users\fahas\desktop\client_sudokusolvertcp\client_sudokutcp\boxconnection.cpp(182): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+  main.cpp
+c:\users\fahas\desktop\client_sudokusolvertcp\client_sudokutcp\main.cpp(152): warning C4101: "buf": Unreferenzierte lokale Variable
+c:\users\fahas\desktop\client_sudokusolvertcp\client_sudokutcp\main.cpp(111): warning C4101: "res": Unreferenzierte lokale Variable
+  HttpReq.cpp
+  Code wird generiert...
+  LINK : C:\Users\fahas\Desktop\Client_SudokuSolverTCP\Client_SudokuTCP\Debug\SudokuTCP.exe wurde nicht gefunden oder beim letzten inkrementellen Linkvorgang nicht erstellt; vollständiger Link wird durchgeführt.
+  
+  Durchlauf 1 gestartet
+  /DEFAULTLIB:msvcprtd wurde verarbeitet.
+  /DEFAULTLIB:uuid.lib wurde verarbeitet.
+  /DEFAULTLIB:MSVCRTD wurde verarbeitet.
+  /DEFAULTLIB:OLDNAMES wurde verarbeitet.
+  /DEFAULTLIB:ws2_32.lib wurde verarbeitet.
+  /DEFAULTLIB:iphlpapi.lib wurde verarbeitet.
+  /DEFAULTLIB:Urlmon.lib wurde verarbeitet.
+  /DEFAULTLIB:xmllite.lib wurde verarbeitet.
+  
+  Bibliotheken werden durchsucht.
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\kernel32.lib:
+        __imp__Sleep@4 gefunden.
+          In "BoxConnection.obj" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __IMPORT_DESCRIPTOR_KERNEL32 gefunden.
+          In "kernel32.lib(KERNEL32.dll)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __NULL_IMPORT_DESCRIPTOR gefunden.
+          In "kernel32.lib(KERNEL32.dll)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        KERNEL32_NULL_THUNK_DATA gefunden.
+          In "kernel32.lib(KERNEL32.dll)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\user32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\gdi32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\winspool.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\comdlg32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\advapi32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\shell32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\ole32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\oleaut32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\uuid.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\odbc32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\odbccp32.lib:
+      Durchsuchen von C:\Users\fahas\Desktop\Client_SudokuSolverTCP\Client_SudokuTCP\Debug\RssReader.lib:
+        "public: virtual __thiscall CRssReader::~CRssReader(void)" (??1CRssReader@@UAE@XZ) gefunden.
+          In "main.obj" referenziert
+          "RssReader.lib(RssReader.obj)" geladen
+      Durchsuchen von C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\msvcprtd.lib:
+        "__declspec(dllimport) public: __thiscall std::_Lockit::_Lockit(int)" (__imp_??0_Lockit@std@@QAE@H@Z) gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: __thiscall std::_Lockit::~_Lockit(void)" (__imp_??1_Lockit@std@@QAE@XZ) gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "bool __cdecl std::uncaught_exception(void)" (?uncaught_exception@std@@YA_NXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "void __cdecl std::_Xbad_alloc(void)" (?_Xbad_alloc@std@@YAXXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "void __cdecl std::_Xinvalid_argument(char const *)" (?_Xinvalid_argument@std@@YAXPBD@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "void __cdecl std::_Xlength_error(char const *)" (?_Xlength_error@std@@YAXPBD@Z) gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "void __cdecl std::_Xout_of_range(char const *)" (?_Xout_of_range@std@@YAXPBD@Z) gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "void __cdecl std::_Facet_Register(class std::_Facet_base *)" (?_Facet_Register@std@@YAXPAV_Facet_base@1@@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(locale0_implib.obj)" geladen
+        "__declspec(dllimport) public: __thiscall std::locale::id::operator unsigned int(void)" (__imp_??Bid@locale@std@@QAEIXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)" (?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: bool __thiscall std::ctype<char>::is(short,char)const " (__imp_?is@?$ctype@D@std@@QBE_NFD@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: static unsigned int __cdecl std::ctype<char>::_Getcat(class std::locale::facet const * *,class std::locale const *)" (__imp_?_Getcat@?$ctype@D@std@@SAIPAPBVfacet@locale@2@PBV42@@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: __thiscall std::ios_base::operator bool(void)const " (__imp_??Bios_base@std@@QBE_NXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: bool __thiscall std::ios_base::operator!(void)const " (__imp_??7ios_base@std@@QBE_NXZ) gefunden.
+          In "Box.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: bool __thiscall std::ios_base::good(void)const " (__imp_?good@ios_base@std@@QBE_NXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: int __thiscall std::ios_base::flags(void)const " (__imp_?flags@ios_base@std@@QBEHXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: __int64 __thiscall std::ios_base::width(void)const " (__imp_?width@ios_base@std@@QBE_JXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: __int64 __thiscall std::ios_base::width(__int64)" (__imp_?width@ios_base@std@@QAE_J_J@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: class std::locale __thiscall std::ios_base::getloc(void)const " (__imp_?getloc@ios_base@std@@QBE?AVlocale@2@XZ) gefunden.
+          In "Box.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) protected: __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::basic_streambuf<char,struct std::char_traits<char> >(void)" (__imp_??0?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAE@XZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) protected: void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::swap(class std::basic_streambuf<char,struct std::char_traits<char> > &)" (__imp_?swap@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXAAV12@@Z) gefunden.
+          In "Box.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: virtual __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::~basic_streambuf<char,struct std::char_traits<char> >(void)" (__imp_??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UAE@XZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: int __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::sbumpc(void)" (__imp_?sbumpc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: int __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::sgetc(void)" (__imp_?sgetc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: int __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::snextc(void)" (__imp_?snextc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: int __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::sputc(char)" (__imp_?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: __int64 __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::sputn(char const *,__int64)" (__imp_?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAE_JPBD_J@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::eback(void)const " (__imp_?eback@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::gptr(void)const " (__imp_?gptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::pbase(void)const " (__imp_?pbase@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::pptr(void)const " (__imp_?pptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::egptr(void)const " (__imp_?egptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) protected: void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::gbump(int)" (__imp_?gbump@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXH@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) protected: void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::setg(char *,char *,char *)" (__imp_?setg@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXPAD00@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::epptr(void)const " (__imp_?epptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IBEPADXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) protected: void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::setp(char *,char *)" (__imp_?setp@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXPAD0@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) protected: void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::setp(char *,char *,char *)" (__imp_?setp@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXPAD00@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) protected: char * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::_Pninc(void)" (__imp_?_Pninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEPADXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: virtual __thiscall std::basic_ios<char,struct std::char_traits<char> >::~basic_ios<char,struct std::char_traits<char> >(void)" (__imp_??1?$basic_ios@DU?$char_traits@D@std@@@std@@UAE@XZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: void __thiscall std::basic_ios<char,struct std::char_traits<char> >::setstate(int,bool)" (__imp_?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z) gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: class std::basic_ostream<char,struct std::char_traits<char> > * __thiscall std::basic_ios<char,struct std::char_traits<char> >::tie(void)const " (__imp_?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: class std::basic_streambuf<char,struct std::char_traits<char> > * __thiscall std::basic_ios<char,struct std::char_traits<char> >::rdbuf(void)const " (__imp_?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ) gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: char __thiscall std::basic_ios<char,struct std::char_traits<char> >::fill(void)const " (__imp_?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: char __thiscall std::basic_ios<char,struct std::char_traits<char> >::widen(char)const " (__imp_?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDD@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) protected: __thiscall std::basic_ios<char,struct std::char_traits<char> >::basic_ios<char,struct std::char_traits<char> >(void)" (__imp_??0?$basic_ios@DU?$char_traits@D@std@@@std@@IAE@XZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: void __thiscall std::basic_ostream<char,struct std::char_traits<char> >::_Osfx(void)" (__imp_?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::operator<<(class std::basic_ostream<char,struct std::char_traits<char> > & (__cdecl*)(class std::basic_ostream<char,struct std::char_traits<char> > &))" (__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::operator<<(int)" (__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@H@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::put(char)" (__imp_?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@D@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::flush(void)" (__imp_?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: __thiscall std::basic_istream<char,struct std::char_traits<char> >::basic_istream<char,struct std::char_traits<char> >(class std::basic_streambuf<char,struct std::char_traits<char> > *,bool)" (__imp_??0?$basic_istream@DU?$char_traits@D@std@@@std@@QAE@PAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z) gefunden.
+          In "Box.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: virtual __thiscall std::basic_istream<char,struct std::char_traits<char> >::~basic_istream<char,struct std::char_traits<char> >(void)" (__imp_??1?$basic_istream@DU?$char_traits@D@std@@@std@@UAE@XZ) gefunden.
+          In "Box.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: bool __thiscall std::basic_istream<char,struct std::char_traits<char> >::_Ipfx(bool)" (__imp_?_Ipfx@?$basic_istream@DU?$char_traits@D@std@@@std@@QAE_N_N@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: __thiscall std::basic_iostream<char,struct std::char_traits<char> >::basic_iostream<char,struct std::char_traits<char> >(class std::basic_streambuf<char,struct std::char_traits<char> > *)" (__imp_??0?$basic_iostream@DU?$char_traits@D@std@@@std@@QAE@PAV?$basic_streambuf@DU?$char_traits@D@std@@@1@@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) protected: void __thiscall std::basic_iostream<char,struct std::char_traits<char> >::swap(class std::basic_iostream<char,struct std::char_traits<char> > &)" (__imp_?swap@?$basic_iostream@DU?$char_traits@D@std@@@std@@IAEXAAV12@@Z) gefunden.
+          In "Box.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: virtual __thiscall std::basic_iostream<char,struct std::char_traits<char> >::~basic_iostream<char,struct std::char_traits<char> >(void)" (__imp_??1?$basic_iostream@DU?$char_traits@D@std@@@std@@UAE@XZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "public: virtual void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::_Lock(void)" (?_Lock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UAEXXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "public: virtual void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::_Unlock(void)" (?_Unlock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UAEXXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "protected: virtual void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::imbue(class std::locale const &)" (?imbue@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEXABVlocale@2@@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "protected: virtual class std::basic_streambuf<char,struct std::char_traits<char> > * __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::setbuf(char *,__int64)" (?setbuf@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEPAV12@PAD_J@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "protected: virtual __int64 __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::showmanyc(void)" (?showmanyc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAE_JXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "protected: virtual int __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::sync(void)" (?sync@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "protected: virtual int __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::uflow(void)" (?uflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHXZ) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "protected: virtual __int64 __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::xsgetn(char *,__int64)" (?xsgetn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAE_JPAD_J@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "protected: virtual __int64 __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::xsputn(char const *,__int64)" (?xsputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAE_JPBD_J@Z) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: static class std::locale::id std::ctype<char>::id" (__imp_?id@?$ctype@D@std@@2V0locale@2@A) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) class std::basic_ostream<char,struct std::char_traits<char> > std::cout" (__imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        __Mbrtowc gefunden.
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        __Strcoll gefunden.
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        __Strxfrm gefunden.
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: __thiscall std::_Locinfo::_Locinfo(char const *)" (__imp_??0_Locinfo@std@@QAE@PBD@Z) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: __thiscall std::_Locinfo::~_Locinfo(void)" (__imp_??1_Locinfo@std@@QAE@XZ) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: struct _Collvec __thiscall std::_Locinfo::_Getcoll(void)const " (__imp_?_Getcoll@_Locinfo@std@@QBE?AU_Collvec@@XZ) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: struct _Cvtvec __thiscall std::_Locinfo::_Getcvt(void)const " (__imp_?_Getcvt@_Locinfo@std@@QBE?AU_Cvtvec@@XZ) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: char const * __thiscall std::_Locinfo::_Getdays(void)const " (__imp_?_Getdays@_Locinfo@std@@QBEPBDXZ) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: char const * __thiscall std::_Locinfo::_Getmonths(void)const " (__imp_?_Getmonths@_Locinfo@std@@QBEPBDXZ) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: unsigned short const * __thiscall std::_Locinfo::_W_Getdays(void)const " (__imp_?_W_Getdays@_Locinfo@std@@QBEPBGXZ) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: unsigned short const * __thiscall std::_Locinfo::_W_Getmonths(void)const " (__imp_?_W_Getmonths@_Locinfo@std@@QBEPBGXZ) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: char const * __thiscall std::_Yarn<char>::c_str(void)const " (__imp_?c_str@?$_Yarn@D@std@@QBEPBDXZ) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: static void * __cdecl std::_Crt_new_delete::operator new(unsigned int)" (__imp_??2_Crt_new_delete@std@@SAPAXI@Z) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: static void __cdecl std::_Crt_new_delete::operator delete(void *)" (__imp_??3_Crt_new_delete@std@@SAXPAX@Z) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) protected: __thiscall std::locale::facet::facet(unsigned int)" (__imp_??0facet@locale@std@@IAE@I@Z) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) protected: virtual __thiscall std::locale::facet::~facet(void)" (__imp_??1facet@locale@std@@MAE@XZ) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "private: static class std::locale::_Locimp * __cdecl std::locale::_Init(bool)" (?_Init@locale@std@@CAPAV_Locimp@12@_N@Z) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: char __thiscall std::ctype<char>::tolower(char)const " (__imp_?tolower@?$ctype@D@std@@QBEDD@Z) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: char const * __thiscall std::ctype<char>::tolower(char *,char const *)const " (__imp_?tolower@?$ctype@D@std@@QBEPBDPADPBD@Z) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "void __cdecl std::_Xregex_error(enum std::regex_constants::error_type)" (?_Xregex_error@std@@YAXW4error_type@regex_constants@1@@Z) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "public: virtual class std::_Facet_base * __thiscall std::locale::facet::_Decref(void)" (?_Decref@facet@locale@std@@UAEPAV_Facet_base@3@XZ) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "public: virtual void __thiscall std::locale::facet::_Incref(void)" (?_Incref@facet@locale@std@@UAEXXZ) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) class std::basic_ostream<char,struct std::char_traits<char> > std::cerr" (__imp_?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: static class std::locale::id std::collate<char>::id" (__imp_?id@?$collate@D@std@@2V0locale@2@A) gefunden.
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "__declspec(dllimport) public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::operator<<(unsigned long)" (__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@K@Z) gefunden.
+          In "main.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        __Thrd_start gefunden.
+          In "main.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        __Thrd_join gefunden.
+          In "main.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        __Thrd_id gefunden.
+          In "main.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        __Mtx_init gefunden.
+          In "main.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        __Mtx_destroy gefunden.
+          In "main.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        __Mtx_lock gefunden.
+          In "main.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        __Mtx_unlock gefunden.
+          In "main.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        __Cnd_init gefunden.
+          In "main.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        __Cnd_destroy gefunden.
+          In "main.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        __Cnd_wait gefunden.
+          In "main.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        __Cnd_signal gefunden.
+          In "main.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        __Cnd_do_broadcast_at_thread_exit gefunden.
+          In "main.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "void __cdecl std::_Throw_C_error(int)" (?_Throw_C_error@std@@YAXH@Z) gefunden.
+          In "main.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        "void __cdecl std::_Throw_Cpp_error(int)" (?_Throw_Cpp_error@std@@YAXH@Z) gefunden.
+          In "main.obj" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        __Xtime_get_ticks gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        __IMPORT_DESCRIPTOR_MSVCP140D gefunden.
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+        MSVCP140D_NULL_THUNK_DATA gefunden.
+          In "msvcprtd.lib(MSVCP140D.dll)" referenziert
+          "msvcprtd.lib(MSVCP140D.dll)" geladen
+      Durchsuchen von C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\MSVCRTD.lib:
+        "void __stdcall `eh vector destructor iterator'(void *,unsigned int,unsigned int,void (__thiscall*)(void *))" (??_M@YGXPAXIIP6EX0@Z@Z) gefunden.
+          In "Box.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "MSVCRTD.lib(ehvecdtr.obj)" geladen
+        "void * __cdecl operator new(unsigned int)" (??2@YAPAXI@Z) gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "MSVCRTD.lib(new_scalar.obj)" geladen
+        "void __cdecl operator delete(void *,unsigned int)" (??3@YAXPAXI@Z) gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "MSVCRTD.lib(delete_scalar_size.obj)" geladen
+        @_RTC_CheckStackVars@8 gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "MSVCRTD.lib(stack.obj)" geladen
+        @__CheckForDebuggerJustMyCode@4 gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "MSVCRTD.lib(debugger_jmc.obj)" geladen
+        @__security_check_cookie@4 gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "msvcprtd.lib(locale0_implib.obj)" referenziert
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "MSVCRTD.lib(secchk.obj)" geladen
+        __RTC_InitBase gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "MSVCRTD.lib(init.obj)" geladen
+        __allshl gefunden.
+          In "Box.obj" referenziert
+          "MSVCRTD.lib(llshl.obj)" geladen
+        "const type_info::`vftable'" (??_7type_info@@6B@) gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "MSVCRTD.lib(std_type_info_static.obj)" geladen
+        ___security_cookie gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "msvcprtd.lib(locale0_implib.obj)" referenziert
+          In "MSVCRTD.lib(ehvecdtr.obj)" referenziert
+          In "MSVCRTD.lib(secchk.obj)" referenziert
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "MSVCRTD.lib(gs_cookie.obj)" geladen
+        __chkstk gefunden.
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "MSVCRTD.lib(chkstk.obj)" geladen
+        _mainCRTStartup gefunden.
+          "MSVCRTD.lib(exe_main.obj)" geladen
+        "void * __cdecl operator new[](unsigned int)" (??_U@YAPAXI@Z) gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "MSVCRTD.lib(new_array.obj)" geladen
+        ___report_rangecheckfailure gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "MSVCRTD.lib(gs_report.obj)" geladen
+        __RTC_UninitUse gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "MSVCRTD.lib(error.obj)" geladen
+        __ltod3 gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "MSVCRTD.lib(ftol3.obj)" geladen
+        __fltused gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "MSVCRTD.lib(fltused.obj)" geladen
+        _atexit gefunden.
+          In "msvcprtd.lib(locale0_implib.obj)" referenziert
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "MSVCRTD.lib(utility.obj)" geladen
+        ___guard_check_icall_fptr gefunden.
+          In "MSVCRTD.lib(utility.obj)" referenziert
+          In "msvcprtd.lib(locale0_implib.obj)" referenziert
+          In "MSVCRTD.lib(ehvecdtr.obj)" referenziert
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          In "MSVCRTD.lib(error.obj)" referenziert
+          "MSVCRTD.lib(guard_support.obj)" geladen
+        __except_handler4 gefunden.
+          In "MSVCRTD.lib(ehvecdtr.obj)" referenziert
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          In "MSVCRTD.lib(utility.obj)" referenziert
+          "MSVCRTD.lib(chandler4gs.obj)" geladen
+        "void __cdecl __scrt_throw_std_bad_alloc(void)" (?__scrt_throw_std_bad_alloc@@YAXXZ) gefunden.
+          In "MSVCRTD.lib(new_scalar.obj)" referenziert
+          "MSVCRTD.lib(throw_bad_alloc.obj)" geladen
+        "void __cdecl operator delete(void *)" (??3@YAXPAX@Z) gefunden.
+          In "MSVCRTD.lib(delete_scalar_size.obj)" referenziert
+          "MSVCRTD.lib(delete_scalar.obj)" geladen
+        __RTC_SetErrorFuncW gefunden.
+          In "MSVCRTD.lib(init.obj)" referenziert
+          "MSVCRTD.lib(userapi.obj)" geladen
+        ___security_init_cookie gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "MSVCRTD.lib(gs_support.obj)" geladen
+        __matherr gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "MSVCRTD.lib(matherr.obj)" geladen
+        __get_startup_argv_mode gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          In "MSVCRTD.lib(utility.obj)" referenziert
+          "MSVCRTD.lib(argv_mode.obj)" geladen
+        __get_startup_commit_mode gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "MSVCRTD.lib(commit_mode.obj)" geladen
+        __get_startup_file_mode gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "MSVCRTD.lib(file_mode.obj)" geladen
+        __get_startup_new_mode gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "MSVCRTD.lib(new_mode.obj)" geladen
+        __get_startup_thread_locale_mode gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "MSVCRTD.lib(thread_locale.obj)" geladen
+        "void __cdecl __scrt_initialize_type_info(void)" (?__scrt_initialize_type_info@@YAXXZ) gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "MSVCRTD.lib(tncleanup.obj)" geladen
+        __should_initialize_environment gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "MSVCRTD.lib(env_mode.obj)" geladen
+        __initialize_default_precision gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "MSVCRTD.lib(default_precision.obj)" geladen
+        __initialize_invalid_parameter_handler gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "MSVCRTD.lib(invalid_parameter_handler.obj)" geladen
+        __initialize_denormal_control gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "MSVCRTD.lib(denormal_control.obj)" geladen
+        ___scrt_initialize_default_local_stdio_options gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "MSVCRTD.lib(default_local_stdio_options.obj)" geladen
+        ___scrt_is_user_matherr_present gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "MSVCRTD.lib(matherr_detection.obj)" geladen
+        ___scrt_get_dyn_tls_init_callback gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "MSVCRTD.lib(dyn_tls_init.obj)" geladen
+        ___scrt_get_dyn_tls_dtor_callback gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "MSVCRTD.lib(dyn_tls_dtor.obj)" geladen
+        ___scrt_is_managed_app gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "MSVCRTD.lib(utility_desktop.obj)" geladen
+        __RTC_Initialize gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "MSVCRTD.lib(initsect.obj)" geladen
+        ___xi_a gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "MSVCRTD.lib(initializers.obj)" geladen
+  /DEFAULTLIB:kernel32.lib wurde verarbeitet.
+   /DISALLOWLIB:msvcrt.lib wurde verarbeitet.
+   /DISALLOWLIB:libcmt.lib wurde verarbeitet.
+   /DISALLOWLIB:libcmtd.lib wurde verarbeitet.
+   /DISALLOWLIB:vcruntime.lib wurde verarbeitet.
+  /DEFAULTLIB:vcruntimed.lib wurde verarbeitet.
+   /DISALLOWLIB:libvcruntime.lib wurde verarbeitet.
+   /DISALLOWLIB:libvcruntimed.lib wurde verarbeitet.
+   /DISALLOWLIB:ucrt.lib wurde verarbeitet.
+  /DEFAULTLIB:ucrtd.lib wurde verarbeitet.
+   /DISALLOWLIB:libucrt.lib wurde verarbeitet.
+   /DISALLOWLIB:libucrtd.lib wurde verarbeitet.
+        "int __cdecl _RTC_GetSrcLine(unsigned char *,wchar_t *,unsigned long,int *,wchar_t *,unsigned long)" (?_RTC_GetSrcLine@@YAHPAEPA_WKPAH1K@Z) gefunden.
+          In "MSVCRTD.lib(error.obj)" referenziert
+          "MSVCRTD.lib(pdblkup.obj)" geladen
+        __except_handler4_noexcept gefunden.
+          In "MSVCRTD.lib(error.obj)" referenziert
+          "MSVCRTD.lib(chandler4_noexcept.obj)" geladen
+        ___isa_available_init gefunden.
+          In "MSVCRTD.lib(utility.obj)" referenziert
+          "MSVCRTD.lib(cpu_disp.obj)" geladen
+        ___scrt_is_ucrt_dll_in_use gefunden.
+          In "MSVCRTD.lib(utility.obj)" referenziert
+          "MSVCRTD.lib(ucrt_detection.obj)" geladen
+      Durchsuchen von C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\OLDNAMES.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\ws2_32.lib:
+        __imp__accept@12 gefunden.
+          In "BoxConnection.obj" referenziert
+          "ws2_32.lib(WS2_32.dll)" geladen
+        __imp__bind@12 gefunden.
+          In "BoxConnection.obj" referenziert
+          "ws2_32.lib(WS2_32.dll)" geladen
+        __imp__closesocket@4 gefunden.
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "ws2_32.lib(WS2_32.dll)" geladen
+        __imp__connect@12 gefunden.
+          In "BoxConnection.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "ws2_32.lib(WS2_32.dll)" geladen
+        __imp__htons@4 gefunden.
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "ws2_32.lib(WS2_32.dll)" geladen
+        __imp__listen@8 gefunden.
+          In "BoxConnection.obj" referenziert
+          "ws2_32.lib(WS2_32.dll)" geladen
+        __imp__recv@16 gefunden.
+          In "BoxConnection.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "ws2_32.lib(WS2_32.dll)" geladen
+        __imp__select@20 gefunden.
+          In "BoxConnection.obj" referenziert
+          "ws2_32.lib(WS2_32.dll)" geladen
+        __imp__sendto@24 gefunden.
+          In "BoxConnection.obj" referenziert
+          "ws2_32.lib(WS2_32.dll)" geladen
+        __imp__socket@12 gefunden.
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "ws2_32.lib(WS2_32.dll)" geladen
+        __imp__WSAStartup@8 gefunden.
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "ws2_32.lib(WS2_32.dll)" geladen
+        __imp__WSACleanup@0 gefunden.
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "ws2_32.lib(WS2_32.dll)" geladen
+        __imp__WSAGetLastError@0 gefunden.
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          "ws2_32.lib(WS2_32.dll)" geladen
+        __imp__inet_pton@12 gefunden.
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          "ws2_32.lib(WS2_32.dll)" geladen
+        _inet_ntop@16 gefunden.
+          In "main.obj" referenziert
+          "ws2_32.lib(WS2_32.dll)" geladen
+        __imp__send@16 gefunden.
+          In "HttpReq.obj" referenziert
+          "ws2_32.lib(WS2_32.dll)" geladen
+        __imp__getaddrinfo@16 gefunden.
+          In "HttpReq.obj" referenziert
+          "ws2_32.lib(WS2_32.dll)" geladen
+        __IMPORT_DESCRIPTOR_WS2_32 gefunden.
+          In "ws2_32.lib(WS2_32.dll)" referenziert
+          In "ws2_32.lib(WS2_32.dll)" referenziert
+          In "ws2_32.lib(WS2_32.dll)" referenziert
+          In "ws2_32.lib(WS2_32.dll)" referenziert
+          In "ws2_32.lib(WS2_32.dll)" referenziert
+          In "ws2_32.lib(WS2_32.dll)" referenziert
+          In "ws2_32.lib(WS2_32.dll)" referenziert
+          In "ws2_32.lib(WS2_32.dll)" referenziert
+          In "ws2_32.lib(WS2_32.dll)" referenziert
+          In "ws2_32.lib(WS2_32.dll)" referenziert
+          In "ws2_32.lib(WS2_32.dll)" referenziert
+          In "ws2_32.lib(WS2_32.dll)" referenziert
+          In "ws2_32.lib(WS2_32.dll)" referenziert
+          In "ws2_32.lib(WS2_32.dll)" referenziert
+          In "ws2_32.lib(WS2_32.dll)" referenziert
+          In "ws2_32.lib(WS2_32.dll)" referenziert
+          In "ws2_32.lib(WS2_32.dll)" referenziert
+          "ws2_32.lib(WS2_32.dll)" geladen
+        WS2_32_NULL_THUNK_DATA gefunden.
+          In "ws2_32.lib(WS2_32.dll)" referenziert
+          "ws2_32.lib(WS2_32.dll)" geladen
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\iphlpapi.lib:
+        _GetIpAddrTable@12 gefunden.
+          In "main.obj" referenziert
+          "iphlpapi.lib(IPHLPAPI.DLL)" geladen
+        __IMPORT_DESCRIPTOR_IPHLPAPI gefunden.
+          In "iphlpapi.lib(IPHLPAPI.DLL)" referenziert
+          "iphlpapi.lib(IPHLPAPI.DLL)" geladen
+        IPHLPAPI_NULL_THUNK_DATA gefunden.
+          In "iphlpapi.lib(IPHLPAPI.DLL)" referenziert
+          "iphlpapi.lib(IPHLPAPI.DLL)" geladen
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\Urlmon.lib:
+        _CreateURLMonikerEx@16 gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "Urlmon.lib(urlmon.dll)" geladen
+        _CreateAsyncBindCtx@16 gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "Urlmon.lib(urlmon.dll)" geladen
+        _RevokeBindStatusCallback@8 gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "Urlmon.lib(urlmon.dll)" geladen
+        _URLOpenBlockingStreamW@20 gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "Urlmon.lib(urlmon.dll)" geladen
+        __IMPORT_DESCRIPTOR_urlmon gefunden.
+          In "Urlmon.lib(urlmon.dll)" referenziert
+          In "Urlmon.lib(urlmon.dll)" referenziert
+          In "Urlmon.lib(urlmon.dll)" referenziert
+          In "Urlmon.lib(urlmon.dll)" referenziert
+          "Urlmon.lib(urlmon.dll)" geladen
+        urlmon_NULL_THUNK_DATA gefunden.
+          In "Urlmon.lib(urlmon.dll)" referenziert
+          "Urlmon.lib(urlmon.dll)" geladen
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\xmllite.lib:
+        _CreateXmlReader@12 gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "xmllite.lib(XmlLite.dll)" geladen
+        __IMPORT_DESCRIPTOR_XmlLite gefunden.
+          In "xmllite.lib(XmlLite.dll)" referenziert
+          "xmllite.lib(XmlLite.dll)" geladen
+        XmlLite_NULL_THUNK_DATA gefunden.
+          In "xmllite.lib(XmlLite.dll)" referenziert
+          "xmllite.lib(XmlLite.dll)" geladen
+      Durchsuchen von C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\vcruntimed.lib:
+        _memcmp gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "vcruntimed.lib(VCRUNTIME140D.dll)" geladen
+        _memcpy gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "vcruntimed.lib(VCRUNTIME140D.dll)" geladen
+        _memmove gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "vcruntimed.lib(VCRUNTIME140D.dll)" geladen
+        ___std_exception_copy gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "MSVCRTD.lib(throw_bad_alloc.obj)" referenziert
+          "vcruntimed.lib(VCRUNTIME140D.dll)" geladen
+        ___std_exception_destroy gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "MSVCRTD.lib(throw_bad_alloc.obj)" referenziert
+          "vcruntimed.lib(VCRUNTIME140D.dll)" geladen
+        __CxxThrowException@8 gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "MSVCRTD.lib(throw_bad_alloc.obj)" referenziert
+          "vcruntimed.lib(VCRUNTIME140D.dll)" geladen
+        ___CxxFrameHandler3 gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "msvcprtd.lib(locale0_implib.obj)" referenziert
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "vcruntimed.lib(VCRUNTIME140D.dll)" geladen
+        _memset gefunden.
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "MSVCRTD.lib(utility_desktop.obj)" referenziert
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          "vcruntimed.lib(VCRUNTIME140D.dll)" geladen
+        _memchr gefunden.
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "vcruntimed.lib(VCRUNTIME140D.dll)" geladen
+        _strchr gefunden.
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "vcruntimed.lib(VCRUNTIME140D.dll)" geladen
+        __except_handler4_common gefunden.
+          In "MSVCRTD.lib(chandler4gs.obj)" referenziert
+          "vcruntimed.lib(VCRUNTIME140D.dll)" geladen
+        ___std_type_info_destroy_list gefunden.
+          In "MSVCRTD.lib(tncleanup.obj)" referenziert
+          "vcruntimed.lib(VCRUNTIME140D.dll)" geladen
+        ___vcrt_GetModuleFileNameW gefunden.
+          In "MSVCRTD.lib(pdblkup.obj)" referenziert
+          "vcruntimed.lib(VCRUNTIME140D.dll)" geladen
+        ___vcrt_GetModuleHandleW gefunden.
+          In "MSVCRTD.lib(pdblkup.obj)" referenziert
+          "vcruntimed.lib(VCRUNTIME140D.dll)" geladen
+        ___vcrt_LoadLibraryExW gefunden.
+          In "MSVCRTD.lib(pdblkup.obj)" referenziert
+          "vcruntimed.lib(VCRUNTIME140D.dll)" geladen
+        __IMPORT_DESCRIPTOR_VCRUNTIME140D gefunden.
+          In "vcruntimed.lib(VCRUNTIME140D.dll)" referenziert
+          In "vcruntimed.lib(VCRUNTIME140D.dll)" referenziert
+          In "vcruntimed.lib(VCRUNTIME140D.dll)" referenziert
+          In "vcruntimed.lib(VCRUNTIME140D.dll)" referenziert
+          In "vcruntimed.lib(VCRUNTIME140D.dll)" referenziert
+          In "vcruntimed.lib(VCRUNTIME140D.dll)" referenziert
+          In "vcruntimed.lib(VCRUNTIME140D.dll)" referenziert
+          In "vcruntimed.lib(VCRUNTIME140D.dll)" referenziert
+          In "vcruntimed.lib(VCRUNTIME140D.dll)" referenziert
+          In "vcruntimed.lib(VCRUNTIME140D.dll)" referenziert
+          In "vcruntimed.lib(VCRUNTIME140D.dll)" referenziert
+          In "vcruntimed.lib(VCRUNTIME140D.dll)" referenziert
+          In "vcruntimed.lib(VCRUNTIME140D.dll)" referenziert
+          In "vcruntimed.lib(VCRUNTIME140D.dll)" referenziert
+          In "vcruntimed.lib(VCRUNTIME140D.dll)" referenziert
+          "vcruntimed.lib(VCRUNTIME140D.dll)" geladen
+        VCRUNTIME140D_NULL_THUNK_DATA gefunden.
+          In "vcruntimed.lib(VCRUNTIME140D.dll)" referenziert
+          "vcruntimed.lib(VCRUNTIME140D.dll)" geladen
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\ucrt\x86\ucrtd.lib:
+        __imp___invalid_parameter gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp___CrtDbgReport gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp___errno gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp__strtol gefunden.
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        _strlen gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "Box.obj" referenziert
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp___calloc_dbg gefunden.
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp__free gefunden.
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp__realloc gefunden.
+          In "BoxConnection.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp__exit gefunden.
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "HttpReq.obj" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp__wcslen gefunden.
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp__strcpy_s gefunden.
+          In "BoxConnection.obj" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp__terminate gefunden.
+          In "BoxConnection.obj" referenziert
+          In "main.obj" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp__malloc gefunden.
+          In "main.obj" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        _strcmp gefunden.
+          In "HttpReq.obj" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp___wtoi gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp__wcstombs gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp____acrt_iob_func gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp____stdio_common_vfwprintf gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp__wcstok_s gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp__wcscmp gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp__wcscpy gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp__wcstok gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp___localtime64 gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp___mktime64 gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp___time64 gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp___free_dbg gefunden.
+          In "msvcprtd.lib(locale0_implib.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __imp___malloc_dbg gefunden.
+          In "msvcprtd.lib(locale0_implib.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __callnewh gefunden.
+          In "MSVCRTD.lib(new_scalar.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __CrtDbgReportW gefunden.
+          In "MSVCRTD.lib(init.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __seh_filter_exe gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __set_app_type gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        ___setusermatherr gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __configure_narrow_argv gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          In "MSVCRTD.lib(utility.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __initialize_narrow_environment gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          In "MSVCRTD.lib(utility.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __get_initial_narrow_environment gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __initterm gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __initterm_e gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __exit gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __set_fmode gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        ___p___argc gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        ___p___argv gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __cexit gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          In "MSVCRTD.lib(utility.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __c_exit gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __register_thread_local_exe_atexit_callback gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __configthreadlocale gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __set_new_mode gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        ___p__commode gefunden.
+          In "MSVCRTD.lib(exe_main.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        _strcat_s gefunden.
+          In "MSVCRTD.lib(error.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        ___stdio_common_vsprintf_s gefunden.
+          In "MSVCRTD.lib(error.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __except1 gefunden.
+          In "MSVCRTD.lib(ftol3.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __seh_filter_dll gefunden.
+          In "MSVCRTD.lib(utility.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __initialize_onexit_table gefunden.
+          In "MSVCRTD.lib(utility.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __register_onexit_function gefunden.
+          In "MSVCRTD.lib(utility.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __execute_onexit_table gefunden.
+          In "MSVCRTD.lib(utility.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __crt_atexit gefunden.
+          In "MSVCRTD.lib(utility.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __crt_at_quick_exit gefunden.
+          In "MSVCRTD.lib(utility.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __controlfp_s gefunden.
+          In "MSVCRTD.lib(default_precision.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __wmakepath_s gefunden.
+          In "MSVCRTD.lib(pdblkup.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __wsplitpath_s gefunden.
+          In "MSVCRTD.lib(pdblkup.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        _wcscpy_s gefunden.
+          In "MSVCRTD.lib(pdblkup.obj)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        __IMPORT_DESCRIPTOR_ucrtbased gefunden.
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+        ucrtbased_NULL_THUNK_DATA gefunden.
+          In "ucrtd.lib(ucrtbased.dll)" referenziert
+          "ucrtd.lib(ucrtbased.dll)" geladen
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\kernel32.lib:
+        __imp__WideCharToMultiByte@32 gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          In "MSVCRTD.lib(error.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__GetCurrentThreadId@0 gefunden.
+          In "MSVCRTD.lib(debugger_jmc.obj)" referenziert
+          In "MSVCRTD.lib(gs_support.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__UnhandledExceptionFilter@4 gefunden.
+          In "MSVCRTD.lib(gs_report.obj)" referenziert
+          In "MSVCRTD.lib(utility_desktop.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__SetUnhandledExceptionFilter@4 gefunden.
+          In "MSVCRTD.lib(gs_report.obj)" referenziert
+          In "MSVCRTD.lib(utility_desktop.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__GetCurrentProcess@0 gefunden.
+          In "MSVCRTD.lib(gs_report.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__TerminateProcess@8 gefunden.
+          In "MSVCRTD.lib(gs_report.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        _IsProcessorFeaturePresent@4 gefunden.
+          In "MSVCRTD.lib(gs_report.obj)" referenziert
+          In "MSVCRTD.lib(utility_desktop.obj)" referenziert
+          In "MSVCRTD.lib(cpu_disp.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__IsDebuggerPresent@0 gefunden.
+          In "MSVCRTD.lib(error.obj)" referenziert
+          In "MSVCRTD.lib(utility_desktop.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__RaiseException@16 gefunden.
+          In "MSVCRTD.lib(error.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__MultiByteToWideChar@24 gefunden.
+          In "MSVCRTD.lib(error.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__QueryPerformanceCounter@4 gefunden.
+          In "MSVCRTD.lib(gs_support.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__GetCurrentProcessId@0 gefunden.
+          In "MSVCRTD.lib(gs_support.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__GetSystemTimeAsFileTime@4 gefunden.
+          In "MSVCRTD.lib(gs_support.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__InitializeSListHead@4 gefunden.
+          In "MSVCRTD.lib(tncleanup.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__GetStartupInfoW@4 gefunden.
+          In "MSVCRTD.lib(utility_desktop.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__GetModuleHandleW@4 gefunden.
+          In "MSVCRTD.lib(utility_desktop.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__GetLastError@0 gefunden.
+          In "MSVCRTD.lib(pdblkup.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__HeapAlloc@12 gefunden.
+          In "MSVCRTD.lib(pdblkup.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__HeapFree@12 gefunden.
+          In "MSVCRTD.lib(pdblkup.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__GetProcessHeap@0 gefunden.
+          In "MSVCRTD.lib(pdblkup.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__VirtualQuery@12 gefunden.
+          In "MSVCRTD.lib(pdblkup.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__FreeLibrary@4 gefunden.
+          In "MSVCRTD.lib(pdblkup.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+        __imp__GetProcAddress@8 gefunden.
+          In "MSVCRTD.lib(pdblkup.obj)" referenziert
+          "kernel32.lib(KERNEL32.dll)" geladen
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\user32.lib:
+        __imp__TranslateMessage@4 gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "user32.lib(USER32.dll)" geladen
+        __imp__DispatchMessageW@4 gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "user32.lib(USER32.dll)" geladen
+        __imp__PeekMessageW@20 gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "user32.lib(USER32.dll)" geladen
+        __IMPORT_DESCRIPTOR_USER32 gefunden.
+          In "user32.lib(USER32.dll)" referenziert
+          In "user32.lib(USER32.dll)" referenziert
+          In "user32.lib(USER32.dll)" referenziert
+          "user32.lib(USER32.dll)" geladen
+        USER32_NULL_THUNK_DATA gefunden.
+          In "user32.lib(USER32.dll)" referenziert
+          "user32.lib(USER32.dll)" geladen
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\gdi32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\winspool.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\comdlg32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\advapi32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\shell32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\ole32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\oleaut32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\uuid.lib:
+        _IID_IUnknown gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "uuid.lib(unknwn_i.obj)" geladen
+        _IID_IStream gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "uuid.lib(objidl_i.obj)" geladen
+        _IID_IBindStatusCallback gefunden.
+          In "RssReader.lib(RssReader.obj)" referenziert
+          "uuid.lib(i_urlmon.obj)" geladen
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\odbc32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\odbccp32.lib:
+      Durchsuchen von C:\Users\fahas\Desktop\Client_SudokuSolverTCP\Client_SudokuTCP\Debug\RssReader.lib:
+      Durchsuchen von C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\msvcprtd.lib:
+      Durchsuchen von C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\MSVCRTD.lib:
+      Durchsuchen von C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\OLDNAMES.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\ws2_32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\iphlpapi.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\Urlmon.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\xmllite.lib:
+      Durchsuchen von C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\vcruntimed.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\ucrt\x86\ucrtd.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\kernel32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\user32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\gdi32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\winspool.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\comdlg32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\advapi32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\shell32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\ole32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\oleaut32.lib:
+  
+  Durchsuchen der Bibliotheken abgeschlossen.
+  
+  Bibliotheken werden durchsucht.
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\kernel32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\user32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\gdi32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\winspool.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\comdlg32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\advapi32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\shell32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\ole32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\oleaut32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\uuid.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\odbc32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\odbccp32.lib:
+      Durchsuchen von C:\Users\fahas\Desktop\Client_SudokuSolverTCP\Client_SudokuTCP\Debug\RssReader.lib:
+      Durchsuchen von C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\msvcprtd.lib:
+      Durchsuchen von C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\MSVCRTD.lib:
+        ___scrt_stub_for_acrt_initialize gefunden.
+          "MSVCRTD.lib(ucrt_stubs.obj)" geladen
+      Durchsuchen von C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\OLDNAMES.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\ws2_32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\iphlpapi.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\Urlmon.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\xmllite.lib:
+      Durchsuchen von C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\vcruntimed.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\ucrt\x86\ucrtd.lib:
+  
+  Durchsuchen der Bibliotheken abgeschlossen.
+  
+  Durchlauf 1 abgeschlossen
+  
   Nicht-SAFESEH-Image wird generiert.
+  
+  Bibliotheken werden durchsucht.
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\kernel32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\user32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\gdi32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\winspool.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\comdlg32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\advapi32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\shell32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\ole32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\oleaut32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\uuid.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\odbc32.lib:
+      Durchsuchen von C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\odbccp32.lib:
+      Durchsuchen von C:\Users\fahas\Desktop\Client_SudokuSolverTCP\Client_SudokuTCP\Debug\RssReader.lib:
+      Durchsuchen von C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\msvcprtd.lib:
+      Durchsuchen von C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\MSVCRTD.lib:
+        __load_config_used gefunden.
+          "MSVCRTD.lib(loadcfg.obj)" geladen
+  
+  Durchsuchen der Bibliotheken abgeschlossen.
+  
+  Aufruf von "rc.exe":
+   /v
+   /x
+   /fo
+   "C:\Users\fahas\AppData\Local\Temp\lnk{3882C6DB-D01E-411A-8616-493804089889}.tmp"
+   "C:\Users\fahas\AppData\Local\Temp\lnk{16B4319D-31E0-429D-90A8-4A3FABB7149E}.tmp"
+  
+  Aufruf von "cvtres.exe":
+   /machine:x86
+   /verbose
+   /out:"C:\Users\fahas\AppData\Local\Temp\lnk{35ABBB6D-17F4-4EF1-B431-A2BCAC1CA591}.tmp"
+   /readonly
+   "C:\Users\fahas\AppData\Local\Temp\lnk{3882C6DB-D01E-411A-8616-493804089889}.tmp"
+  
+  
+  Nicht verwendete Bibliotheken:
+    C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\gdi32.lib
+    C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\winspool.lib
+    C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\comdlg32.lib
+    C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\advapi32.lib
+    C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\shell32.lib
+    C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\ole32.lib
+    C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\oleaut32.lib
+    C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\odbc32.lib
+    C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x86\odbccp32.lib
+    C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\OLDNAMES.lib
+  
   Durchlauf 2 gestartet.
+       * linker generated manifest res *
+       HttpReq.obj
+       main.obj
+       BoxConnection.obj
        Box.obj
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       kernel32.lib(KERNEL32.dll)
+       user32.lib(USER32.dll)
+       user32.lib(USER32.dll)
+       user32.lib(USER32.dll)
+       user32.lib(USER32.dll)
+       user32.lib(USER32.dll)
+       uuid.lib(objidl_i.obj)
+       uuid.lib(unknwn_i.obj)
+       uuid.lib(i_urlmon.obj)
+       RssReader.lib(RssReader.obj)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(MSVCP140D.dll)
+       msvcprtd.lib(locale0_implib.obj)
+       MSVCRTD.lib(llshl.obj)
+       MSVCRTD.lib(chkstk.obj)
+       MSVCRTD.lib(ftol3.obj)
+       MSVCRTD.lib(gs_cookie.obj)
+       MSVCRTD.lib(gs_report.obj)
+       MSVCRTD.lib(gs_support.obj)
+       MSVCRTD.lib(guard_support.obj)
        MSVCRTD.lib(loadcfg.obj)
+       MSVCRTD.lib(debugger_jmc.obj)
+       MSVCRTD.lib(dyn_tls_dtor.obj)
+       MSVCRTD.lib(dyn_tls_init.obj)
+       MSVCRTD.lib(matherr_detection.obj)
+       MSVCRTD.lib(ucrt_detection.obj)
+       MSVCRTD.lib(cpu_disp.obj)
+       MSVCRTD.lib(chandler4gs.obj)
+       MSVCRTD.lib(secchk.obj)
+       MSVCRTD.lib(argv_mode.obj)
+       MSVCRTD.lib(commit_mode.obj)
+       MSVCRTD.lib(default_local_stdio_options.obj)
+       MSVCRTD.lib(denormal_control.obj)
+       MSVCRTD.lib(env_mode.obj)
+       MSVCRTD.lib(file_mode.obj)
+       MSVCRTD.lib(fltused.obj)
+       MSVCRTD.lib(invalid_parameter_handler.obj)
+       MSVCRTD.lib(matherr.obj)
+       MSVCRTD.lib(new_mode.obj)
+       MSVCRTD.lib(thread_locale.obj)
+       MSVCRTD.lib(ehvecdtr.obj)
+       MSVCRTD.lib(std_type_info_static.obj)
+       MSVCRTD.lib(tncleanup.obj)
+       MSVCRTD.lib(delete_scalar.obj)
+       MSVCRTD.lib(delete_scalar_size.obj)
+       MSVCRTD.lib(new_array.obj)
+       MSVCRTD.lib(new_scalar.obj)
+       MSVCRTD.lib(throw_bad_alloc.obj)
+       MSVCRTD.lib(exe_main.obj)
+       MSVCRTD.lib(initializers.obj)
+       MSVCRTD.lib(utility.obj)
+       MSVCRTD.lib(ucrt_stubs.obj)
+       MSVCRTD.lib(utility_desktop.obj)
+       MSVCRTD.lib(error.obj)
+       MSVCRTD.lib(init.obj)
+       MSVCRTD.lib(initsect.obj)
+       MSVCRTD.lib(pdblkup.obj)
+       MSVCRTD.lib(stack.obj)
+       MSVCRTD.lib(userapi.obj)
+       MSVCRTD.lib(default_precision.obj)
+       MSVCRTD.lib(chandler4_noexcept.obj)
+       ws2_32.lib(WS2_32.dll)
+       ws2_32.lib(WS2_32.dll)
+       ws2_32.lib(WS2_32.dll)
+       ws2_32.lib(WS2_32.dll)
+       ws2_32.lib(WS2_32.dll)
+       ws2_32.lib(WS2_32.dll)
+       ws2_32.lib(WS2_32.dll)
+       ws2_32.lib(WS2_32.dll)
+       ws2_32.lib(WS2_32.dll)
+       ws2_32.lib(WS2_32.dll)
+       ws2_32.lib(WS2_32.dll)
+       ws2_32.lib(WS2_32.dll)
+       ws2_32.lib(WS2_32.dll)
+       ws2_32.lib(WS2_32.dll)
+       ws2_32.lib(WS2_32.dll)
+       ws2_32.lib(WS2_32.dll)
+       ws2_32.lib(WS2_32.dll)
+       ws2_32.lib(WS2_32.dll)
+       ws2_32.lib(WS2_32.dll)
+       iphlpapi.lib(IPHLPAPI.DLL)
+       iphlpapi.lib(IPHLPAPI.DLL)
+       iphlpapi.lib(IPHLPAPI.DLL)
+       Urlmon.lib(urlmon.dll)
+       Urlmon.lib(urlmon.dll)
+       Urlmon.lib(urlmon.dll)
+       Urlmon.lib(urlmon.dll)
+       Urlmon.lib(urlmon.dll)
+       Urlmon.lib(urlmon.dll)
+       xmllite.lib(XmlLite.dll)
+       xmllite.lib(XmlLite.dll)
+       xmllite.lib(XmlLite.dll)
+       vcruntimed.lib(VCRUNTIME140D.dll)
+       vcruntimed.lib(VCRUNTIME140D.dll)
+       vcruntimed.lib(VCRUNTIME140D.dll)
+       vcruntimed.lib(VCRUNTIME140D.dll)
+       vcruntimed.lib(VCRUNTIME140D.dll)
+       vcruntimed.lib(VCRUNTIME140D.dll)
+       vcruntimed.lib(VCRUNTIME140D.dll)
+       vcruntimed.lib(VCRUNTIME140D.dll)
+       vcruntimed.lib(VCRUNTIME140D.dll)
+       vcruntimed.lib(VCRUNTIME140D.dll)
+       vcruntimed.lib(VCRUNTIME140D.dll)
+       vcruntimed.lib(VCRUNTIME140D.dll)
+       vcruntimed.lib(VCRUNTIME140D.dll)
+       vcruntimed.lib(VCRUNTIME140D.dll)
+       vcruntimed.lib(VCRUNTIME140D.dll)
+       vcruntimed.lib(VCRUNTIME140D.dll)
+       vcruntimed.lib(VCRUNTIME140D.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
+       ucrtd.lib(ucrtbased.dll)
   Durchlauf 2 abgeschlossen.
-  SudokuTCP.vcxproj -> E:\UniProjekte\Client_SudokuTCP\Debug\SudokuTCP.exe
+  Microsoft (R) Windows (R) Resource Compiler Version 10.0.10011.16384
+  
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  
+  Creating C:\Users\fahas\AppData\Local\Temp\lnk{3882C6DB-D01E-411A-8616-493804089889}.tmp
+  
+  Using codepage 1252 as default
+  
+  C:\Users\fahas\AppData\Local\Temp\lnk{16B4319D-31E0-429D-90A8-4A3FABB7149E}.tmp.
+  Writing 24:1,	lang:0x409,	size 381
+  Microsoft (R) Windows Resource To Object Converter, Version 14.16.27026.1
+  Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
+  
+  Die Ressource wird hinzugef³gt. type:MANIFEST, name:1, language:0x0409, flags:0x30, size:381.
+  Failed to connect to VCTIP: 'CreateFile' failed with 2
+  Not launching VCTIP: it is flagged as unstable
+  Telemetry event upload failed: 'Failed to open connection to VCTIP'
+  SudokuTCP.vcxproj -> C:\Users\fahas\Desktop\Client_SudokuSolverTCP\Client_SudokuTCP\Debug\SudokuTCP.exe

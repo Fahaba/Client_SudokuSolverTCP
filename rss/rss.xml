@@ -1,17 +1,10 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
-<rss version="2.0" >
- <channel>
-  <title>Webmasterparadies.de RSS-Feed</title>
-  <link>http://localhost/rss.xml</link>
-  <description>Alles für deinen Web-Auftritt</description>
-  <language>de-de</language>
-  <copyright>1998-2017 Webmasterparadies.de</copyright>
-  
-  <item>
-   <title>Eigenen RSS-Feed erstellen</title>
-   <link>http://localhost/</link>
-   <description>Ich erkläre dir im Folgenden, wie du einen eigenen RSS-Feed erstellen kannst.</description>
-  </item>
-  <pubDate>Mon, 24 Nov 2008 16:46:36 GMT</pubDate>
- </channel>
+<rss version='2.0'>
+<channel>
+<title>Sodoku-Feed</title>
+<link>http://localhost/</link>
+<description>Distributed Sudoku Solver Feed</description>
+<language>en-us</language>
+<copyright>Copyright (C) 2019 Fabian Hasselbach</copyright>
+<pubDate>Wed, 13 Mar 2019 14:53:28 +0100</pubDate>
+</channel>
 </rss>

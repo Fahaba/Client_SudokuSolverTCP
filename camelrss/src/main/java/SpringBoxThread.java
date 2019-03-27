@@ -17,6 +17,7 @@ public class SpringBoxThread extends Thread {
 
         try {
             context.addRoutes(new RestRoute());
+            context.start();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -26,7 +27,7 @@ public class SpringBoxThread extends Thread {
 
         while(true) {
             try {
-                context.start();
+                //context.start();
                 //ConsumerTemplate con = context.createConsumerTemplate();
 //                System.out.println(con.receiveBody("seda:end", String.class) + "\n\n");
                 sleep(5000);

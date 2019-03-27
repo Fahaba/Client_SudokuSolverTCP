@@ -95,7 +95,7 @@ int main(int argc, char *argv[])
     box->print();
 
 	// setup rss reader
-	CRssReader* reader = new CRssReader(L"http://localhost/rss.xml", *box);
+	CRssReader* reader = new CRssReader(L"http://localhost:1234/rss.xml", *box);
 	std::thread CRssThread(&CRssReader::ReadLoop, reader);
 
     string ipAdress = hostAddr;  // IP Adress of the server

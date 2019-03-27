@@ -13,6 +13,7 @@ public class MQTTThread extends Thread {
         context = new DefaultCamelContext();
         try {
             context.addRoutes(new MQTTtoRss());
+            context.start();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -22,8 +23,8 @@ public class MQTTThread extends Thread {
 
         while(true) {
             try {
-                System.err.println("Starting mqtt to rss");
-                context.start();
+                //System.err.println("Starting mqtt to rss");
+                //context.start();
                 sleep(1000);
             } catch (Exception e) {
                 e.printStackTrace();

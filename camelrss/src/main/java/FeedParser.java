@@ -27,9 +27,23 @@ public class FeedParser {
         JSONObject json = null;
         try {
             json = new JSONObject(messageBody);
-            String row = (String)json.get("r_row");
-            String col = (String)json.get("r_column");
-            String val = (String)json.get("value");
+
+            if ((json.has("SUDOKU")))
+            {
+                // start box and return
+                System.err.println("Starting RssToMqtt Thread");
+                RssThread rssT = new RssThread(mqtt_ip, mqtt_port, boxName);
+                rssT.start();
+                return null;
+            }
+
+            if (!json.has("r_row") || !json.has("r_column")
+            || !json.has("value"))
+                return null;
+
+            int row = json.getInt("r_row");
+            int col = json.getInt("r_column");
+            int val = json.getInt("value");
 
             String header = boxName + "%2C" + row + "%2C" + col + "%2C" + val;
             return header;

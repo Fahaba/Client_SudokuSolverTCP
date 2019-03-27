@@ -23,8 +23,7 @@ public class RssToFeedParser extends RouteBuilder{
 
     @Override
     public void configure() throws Exception {
-        System.out.println("Hi.");
-        from("rss:http://localhost/rss.xml?&splitEntries=false&consumer.delay=10000")
+        from("rss:http://localhost:1234/rss.xml?&splitEntries=false&consumer.delay=10000")
                 .setHeader("json", body())
                 .loopDoWhile(simple("${body} != null"))
 
@@ -34,7 +33,7 @@ public class RssToFeedParser extends RouteBuilder{
                             + FeedParser.mqtt_ip
                             +":"
                             + FeedParser.mqtt_port
-                            + "&publishTopicName=sudoku/"
+                            + "&publishTopicName=TEST/sudoku/"
                             + FeedParser.boxName.toLowerCase())
 
                 .end();

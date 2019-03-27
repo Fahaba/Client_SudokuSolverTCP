@@ -15,8 +15,9 @@ public class MQTTtoRss extends RouteBuilder {
             + FeedParser.mqtt_ip
             + ":"
             + FeedParser.mqtt_port
-            + "&subscribeTopicNames=sudoku/+")
+            + "&subscribeTopicNames=TEST/sudoku/+")
                 .setHeader("val", method(FeedParser.class, "processToRss(${body})"))
-                .recipientList(simple("http://127.0.0.1/HandleAddFeed.php?message=${header.val}"));
+                .log("${header.val}")
+                .recipientList(simple("http://127.0.0.1:1234/HandleAddFeed.php?message=${header.val}"));
     }
 }

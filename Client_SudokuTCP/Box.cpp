@@ -456,7 +456,7 @@ void Box::SendToNeighbors(std::vector<newVal> newValues)
             //sendto(conn.second.socket, ss.str().c_str(), strlen(ss.str().c_str()), 0, (sockaddr*)&conn.second.out, sizeof(conn.second.out));
 		std::string response;
 		std::cout << "bin hier" << std::endl;
-		HttpReq("GET", "127.0.0.1", 80, ss.str().c_str(), NULL, response);
+		HttpReq("GET", "127.0.0.1", 1234, ss.str().c_str(), NULL, response);
 		// do s.th with response?
     }
 }
