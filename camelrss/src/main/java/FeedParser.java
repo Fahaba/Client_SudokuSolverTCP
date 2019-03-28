@@ -1,6 +1,9 @@
 import com.sun.org.apache.xerces.internal.parsers.DOMParser;
-import org.apache.camel.CamelContext;
+import org.apache.camel.*;
+import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.impl.DefaultCamelContext;
+import org.apache.camel.impl.DefaultExchange;
+import org.apache.camel.json.simple.JsonArray;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -28,6 +31,14 @@ public class FeedParser {
         try {
             json = new JSONObject(messageBody);
 
+            // catch result message
+            if ((json.has("result")))
+            {
+                System.err.println("RESULT CALLED");
+                return null;
+            }
+
+            // catch start message
             if ((json.has("SUDOKU")))
             {
                 // start box and return
@@ -38,26 +49,25 @@ public class FeedParser {
             }
 
             if (!json.has("r_row") || !json.has("r_column")
-            || !json.has("value"))
+            || !json.has("value") || !json.has("box"))
                 return null;
 
             int row = json.getInt("r_row");
             int col = json.getInt("r_column");
             int val = json.getInt("value");
-
-            String header = boxName + "%2C" + row + "%2C" + col + "%2C" + val;
+            String box = json.getString("box").split("/")[1].toUpperCase();
+            String header = box + "%2C" + row + "%2C" + col + "%2C" + val;
             return header;
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
-        return "";
+        // should not happen
+        return null;
     }
 
     public static String processValues(String messageBody) throws IOException, SAXException, ParserConfigurationException, JSONException {
-        //JOptionPane.showMessageDialog(null, messageBody);
-        //System.out.println("rftphojmeroihgmer0ihmer0ihmerhmer0hmiermhiermh");
-        //System.out.println(messageBody);
+
         DOMParser parser = new DOMParser();
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -68,14 +78,11 @@ public class FeedParser {
         parser.element("item", null);
 
         Document doc = parser.getDocument();
-        //JSONArray arr = new JSONArray();
         JSONObject json = new JSONObject();
         NodeList list = doc.getElementsByTagName("item");
         for (int i = 0; i < list.getLength(); i++)
         {
             String itemValue = list.item(i).getTextContent();
-            //System.out.println(itemValue.split("\n")[1]);
-            //System.out.println(itemValue.split("\n")[3]);
             // send to mqtt server
             int messageIndex = Integer.parseInt(itemValue.split("\n")[1].split(":")[1]);
             if (messageIndex > latestMessage)
@@ -83,6 +90,58 @@ public class FeedParser {
                 // send new value
                 latestMessage = messageIndex;
                 System.out.println(latestMessage);
+
+                String[] resultTest = itemValue.split("\n")[3].split(":");
+                if (resultTest[0].trim().equals("RESULT"))
+                {
+                    System.err.println(resultTest[0]);
+                    String resRaw = resultTest[1];
+                    String[] resSplitted = resultTest[1].split(",");
+
+//                    if (!resSplitted[0].equalsIgnoreCase(boxName))
+//                        return null;
+
+                    String finishedBox = "sudoku/" + resSplitted[0];
+                    String result = resSplitted[1];
+
+                    String formatResult = "[";
+                    for (int j = 0; j < 9; j++)
+                    {
+                        formatResult += result.charAt(j) + ",";
+                    }
+                    formatResult = formatResult.substring(0, formatResult.length()-1) + "]";
+
+                    json.put("result", formatResult);
+                    json.put("box", finishedBox);
+
+                    System.err.println(json.toString());
+                    final String jsonString = json.toString();
+                    try {
+                        new DefaultCamelContext().addRoutes(new RouteBuilder() {
+                            public void configure() throws Exception {
+
+                                ProducerTemplate template = this.getContext().createProducerTemplate(0);
+                                Exchange ex = new DefaultExchange(this.getContext());
+                                ex.getIn().setBody(jsonString);
+
+                                template.send("http://127.0.0.1:4242/api/result", ex);
+//                                from("direct:start")
+//                                        .setHeader(Exchange.HTTP_METHOD, constant("POST"))
+//                                        .setHeader(Exchange.CONTENT_TYPE, constant("application/json"))
+//                                        .process(new Processor() {
+//                                            public void process(Exchange exchange) throws Exception {
+//                                                exchange.getOut().setBody(jsonString);
+//                                            }
+//                                        })
+//                                        .to("http://127.0.0.1:4242/api/result");
+                            }
+                        });
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                    System.exit(1);
+                }
 
                 String[] msgarr = itemValue.split("\n")[3].split(",");
 

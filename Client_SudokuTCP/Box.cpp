@@ -48,7 +48,7 @@ bool Box::LoadConfigFromFile(std::string path)
 				toSend.x = row;
 				toSend.y = col;
 				toSend.val = val;
-				SendToNeighbors(std::vector<newVal>{toSend});
+				SendToNeighbors(std::vector<newVal>{toSend}, false);
 			}
 			
             
@@ -155,17 +155,6 @@ void Box::SetValueInGrid(std::string boxName, int x, int y, int val)
     m_cols[y_intern]
         [x_intern] = val;
 	
-	/*if (val)
-	{
-		newVal toSend;
-		toSend.x = x;
-		toSend.y = y;
-		toSend.val = val;
-		SendToNeighbors(std::vector<newVal>{toSend});
-		print();
-	}*/
-
-	
 	CalculatePossibleValues();
 	print();
 }
@@ -254,8 +243,8 @@ std::vector<newVal> Box::CalculatePossibleValues()
             possibleForCell[((boxRow - offsetxy.first) * 3) + (boxCell % 3)] = possibleValues;
         }
     }
-
-    SendToNeighbors(newValues);
+	// send result (and close box)
+	SendToNeighbors(newValues, possibleForBox == 0 ? true : false);
     return newValues;
 }
 
@@ -336,7 +325,7 @@ void Box::CheckOnlyPossibleInColumn(int boxRow, int boxCell, std::vector<newVal>
 
 void Box::CheckOnlyPossibleInRow(int boxRow, int boxCell, std::vector<newVal> &newValues)
 {
-    // check only possible in col
+	// check only possible in col
     for (int testVal = 1; testVal <= 9; testVal++)
     {
         if (!(possibleForBox & (1 << testVal)))
@@ -450,7 +439,7 @@ void Box::SendToNeighbors(std::vector<newVal> newValues, bool finished)
 	if (finished)
 	{
 		ss = std::stringstream();
-		ss << "/HandleAddFeed.php?message=";
+		ss << "/HandleAddFeed.php?message=RESULT:";
 		ss << m_name;
 		ss << ",";
 

@@ -1,5 +1,4 @@
-import com.sun.org.apache.xerces.internal.parsers.DOMParser;
-import org.apache.abdera.model.Feed;
+
 import org.apache.camel.builder.RouteBuilder;
 import org.w3c.dom.*;
 import org.xml.sax.*;
@@ -23,12 +22,10 @@ public class RssToFeedParser extends RouteBuilder{
 
     @Override
     public void configure() throws Exception {
-        from("rss:http://localhost:1234/rss.xml?&splitEntries=false&consumer.delay=10000")
+        from("rss:http://127.0.0.1/rss.xml?&splitEntries=false&consumer.delay=10000")
                 .setHeader("json", body())
                 .loopDoWhile(simple("${body} != null"))
-
                 .setBody(method(FeedParser.class, "processValues(${header.json})"))
-                //.log("${header.json}")
                     .to("mqtt:bar?host=tcp://"
                             + FeedParser.mqtt_ip
                             +":"

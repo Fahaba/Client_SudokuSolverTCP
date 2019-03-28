@@ -16,7 +16,7 @@ public class RestRoute extends RouteBuilder{
             ProducerTemplate template = this.getContext().createProducerTemplate(0);
 
             Exchange ex = template
-                    .request("http://136.199.12.246:4242/api/initialize", null);
+                    .request("http://127.0.0.1:4242/api/initialize", null);
             Message msg = ex.getOut();
             JSONObject json = new JSONObject(msg.getBody(String.class));
 
@@ -50,19 +50,23 @@ public class RestRoute extends RouteBuilder{
 //            System.err.println(boxName);
 
             // start box with parameters from exchange out
-            String boxPath = "C:\\Users\\fahas\\Desktop\\Client_SudokuSolverTCP\\Client_SudokuTCP\\Debug\\SudokuTCP.exe";
+            String boxPath = "E:\\UniProjekte\\Client_SudokuTCP\\Debug\\SudokuTCP.exe";
             TaskStreamCopyHelper helper = new TaskStreamCopyHelper(boxPath, initString, boxName);
             helper.start();
             //Process p = new ProcessBuilder("C:\\Users\\fahas\\Desktop\\Client_SudokuSolverTCP\\Client_SudokuTCP\\Debug\\SudokuTCP.exe", boxName, initString, "127.0.0.1", "1337").start();
 
             System.out.println("TEST");
 
-            template.request("http://136.199.12.246:4242/api/ready?box=sudoku%2F"+boxName.toLowerCase(), null);
+            template.request("http://127.0.0.1:4242/api/ready?box=sudoku/"+boxName.toLowerCase(), null);
 
             // start mqtt route
             FeedParser.mqtt_ip = mqtt_ip;
             FeedParser.mqtt_port = mqtt_port;
             FeedParser.boxName = boxName;
+
+//            FeedParser.mqtt_ip = "127.0.0.1";
+//            FeedParser.mqtt_port = 1338;
+//            FeedParser.boxName = boxName;
 
 //            System.err.println("Starting RssToMqtt Thread");
 //            RssThread rssT = new RssThread(mqtt_ip, mqtt_port, boxName);

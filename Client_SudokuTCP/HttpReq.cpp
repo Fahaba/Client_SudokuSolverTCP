@@ -91,25 +91,3 @@ HttpReq::HttpReq(
 	WSACleanup();
 
 } // HTTPReq
-
-
-//void main()
-//{
-//	std::string response;
-//	HTTPReq("GET", "soundly.me", 80, "/", NULL, response);
-//
-//	std::cout << "=============================== response:"
-//		<< std::endl
-//		<< response
-//		<< std::endl
-//		<< "=============================== "
-//		<< std::endl;
-//
-//	/*
-//		Doing a POST, note the "percent" encoding for 'opt_urlencode':
-//
-//	HTTPReq("POST", "soundly.me", 80, "/not-a-real-resource",
-//		"userdata=%7B%22key%22%3A%5B%22value0%22%5D%7D", response);
-//
-//	*/
-//}
