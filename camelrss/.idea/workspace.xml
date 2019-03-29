@@ -1,67 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/RssToFeedParser.java" line="28" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/RssToFeedParser.java" line="21" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c1af75f-3492-4214-9797-913591667920" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/Browse.VC.db" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/Browse.VC.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/16e11c3d1bfeaf57/MAIN.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/16e11c3d1bfeaf57/MAIN.ipch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/1991410260549ce9/BOX.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/1991410260549ce9/BOX.ipch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/6470eb83115bfb90/RSSREADER.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/6470eb83115bfb90/RSSREADER.ipch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/c75baf823e96ec84/MAIN.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/c75baf823e96ec84/MAIN.ipch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/Box.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/Box.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/Box.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/Box.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/Debug/RssReader.lib" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/Debug/RssReader.lib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/Debug/RssReader.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/Debug/RssReader.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/Debug/SudokuTCP.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/Debug/SudokuTCP.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/Debug/SudokuTCP.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/Debug/SudokuTCP.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/Debug/SudokuTCP.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/Debug/SudokuTCP.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/HttpReq.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/HttpReq.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/Box.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/Box.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/BoxConnection.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/BoxConnection.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/HttpReq.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/HttpReq.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/SudokuTCP.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/SudokuTCP.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/SudokuTCP.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/SudokuTCP.tlog/CL.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/SudokuTCP.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/SudokuTCP.tlog/CL.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/SudokuTCP.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/SudokuTCP.tlog/CL.write.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/SudokuTCP.tlog/SudokuTCP.lastbuildstate" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/SudokuTCP.tlog/SudokuTCP.lastbuildstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/SudokuTCP.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/SudokuTCP.tlog/link.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/SudokuTCP.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/SudokuTCP.tlog/link.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/SudokuTCP.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/SudokuTCP.tlog/link.write.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/main.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/vc141.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/vc141.idb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/vc141.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/SudokuTCP/Debug/vc141.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Client_SudokuTCP/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/Main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/Main.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/RssReader.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/RssReader.idb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/RssReader.log" beforeDir="false" afterPath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/RssReader.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/RssReader.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/RssReader.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/RssReader.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/RssReader.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/RssReader.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/RssReader.tlog/CL.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/RssReader.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/RssReader.tlog/CL.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/RssReader.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/RssReader.tlog/CL.write.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/RssReader.tlog/Lib-link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/RssReader.tlog/Lib-link.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/RssReader.tlog/Lib-link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/RssReader.tlog/Lib-link.write.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/RssReader.tlog/RssReader.lastbuildstate" beforeDir="false" afterPath="$PROJECT_DIR$/../RssReaderCPP/C++/Debug/RssReader.tlog/RssReader.lastbuildstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RssReaderCPP/C++/RssReader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../RssReaderCPP/C++/RssReader.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/Browse.VC.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/Solution.VC.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/Solution.VC.db-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/Solution.VC.db-wal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/16e11c3d1bfeaf57/MAIN.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/1991410260549ce9/BOX.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/1e7e92201c705d4/MAIN.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/2c128e7873b966af/MAIN.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/2f29f224c450f7b1/BOX.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/30c238259a6c6632/HTTPREQ.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/48faf5e71d356551/HTTPREQ.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/53e298e16775c422/BOX.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/6470eb83115bfb90/RSSREADER.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/7bcdf9a26e61e057/BOXCONNECTION.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/82763bad32b8160a/HTTPREQ.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/c75baf823e96ec84/MAIN.ipch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client_SudokuTCP/.vs/Client_SudokuTCP/v15/ipch/AutoPCH/fb42f3c333f1630/BOX.ipch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ConverterToRss.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FeedParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FeedParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MQTTThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MQTTThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MQTTtoRss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MQTTtoRss.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ReadyRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReadyRoute.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RestRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RssThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RssThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RssToFeedParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RssToFeedParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FeedParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FeedParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/camel-rss.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/camelrss.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MQTTtoRss.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MQTTtoRss.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SpringBoxThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpringBoxThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TaskStreamCopyHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TaskStreamCopyHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ReadyRoute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ReadyRoute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RestRoute.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RestRoute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RssToFeedParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RssToFeedParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sudoku_db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../sudoku_db.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,22 +44,19 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/camelrss$Main.ic" NAME="Main Coverage Results" MODIFIED="1553884393278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="238" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="119" column="21" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/RssToFeedParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-153">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+            <state relative-caret-position="272">
+              <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -94,8 +64,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/RestRoute.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/TaskStreamCopyHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/RssThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-164">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="187">
+              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SpringBoxThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+            <state relative-caret-position="204">
+              <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,7 +113,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/MQTTThread.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -142,20 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MQTTtoRss.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="99" selection-start-line="19" selection-start-column="99" selection-end-line="19" selection-end-column="99" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ConverterToRss.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="204">
+              <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,12 +136,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/FeedParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="131" column="103" lean-forward="true" selection-start-line="131" selection-start-column="103" selection-end-line="131" selection-end-column="103" />
+            <state relative-caret-position="346">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4563#4935#0" expanded="true" />
-                <element signature="e#4934#4935#0" expanded="true" />
+                <element signature="e#4359#5542#0" expanded="true" />
+                <element signature="e#5541#5542#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -180,8 +150,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            <state relative-caret-position="289">
+              <caret line="17" column="27" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -221,17 +191,17 @@
         <option value="$PROJECT_DIR$/src/main/java/ProcessorToRss.java" />
         <option value="$PROJECT_DIR$/src/main/java/JsonToFeedConv.java" />
         <option value="$PROJECT_DIR$/src/main/java/ConverterToRss.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MQTTThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RssThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SpringBoxThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/TaskStreamCopyHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/ReadyRoute.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MQTTtoRss.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/RssToFeedParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SpringBoxThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MQTTThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MQTTtoRss.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RssThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/RestRoute.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TaskStreamCopyHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/FeedParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RssToFeedParser.java" />
       </list>
     </option>
   </component>
@@ -252,10 +222,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="443" />
-    <option name="y" value="16" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -297,7 +267,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553735084548" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553887659315" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -317,11 +287,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/scoop/apps/openjdk/current" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="camel-rss" />
+      <option name="PROGRAM_PARAMETERS" value="http://127.0.0.1:4242 http://127.0.0.1 $PROJECT_DIR$/../Client_SudokuTCP/Debug/SudokuBox.exe" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -340,7 +311,6 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MainRoute" />
       </list>
     </recent_temporary>
@@ -382,7 +352,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17110874" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1748401" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -390,7 +360,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4978678" weight="0.32936078" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4978678" visible="true" weight="0.32922733" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6034115" weight="0.42578548" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49413645" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -400,6 +370,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5021322" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49573562" weight="0.32936078" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -460,14 +431,8 @@
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ConverterToRss.java</url>
-          <line>4</line>
-          <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/FeedParser.java</url>
-          <line>76</line>
+          <line>77</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
@@ -479,13 +444,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/FeedParser.java</url>
-          <line>41</line>
+          <line>42</line>
           <properties />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/FeedParser.java</url>
-          <line>29</line>
+          <line>30</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
@@ -602,16 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TaskStreamCopyHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ReadyRoute.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -624,7 +579,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
+        <state relative-caret-position="2023">
           <caret line="119" column="21" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
         </state>
       </provider>
@@ -639,10 +594,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MQTTThread.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        <state relative-caret-position="289">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -651,45 +606,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SpringBoxThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        <state relative-caret-position="204">
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RssThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-164">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RssToFeedParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RestRoute.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/TaskStreamCopyHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/MQTTThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        <state relative-caret-position="238">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -698,22 +636,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MQTTtoRss.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="99" selection-start-line="19" selection-start-column="99" selection-end-line="19" selection-end-column="99" />
+        <state relative-caret-position="204">
+          <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FeedParser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/RssThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="131" column="103" lean-forward="true" selection-start-line="131" selection-start-column="103" selection-end-line="131" selection-end-column="103" />
+        <state relative-caret-position="187">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4563#4935#0" expanded="true" />
-            <element signature="e#4934#4935#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RestRoute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RssToFeedParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FeedParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4359#5542#0" expanded="true" />
+            <element signature="e#5541#5542#0" expanded="true" />
           </folding>
         </state>
       </provider>

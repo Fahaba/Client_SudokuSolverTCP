@@ -365,11 +365,11 @@ HRESULT CRssReader::Parse()
 					//std::vector<std::pair<std::string, Box::BoxField> >::iterator it = m_box.m_boxGrid.begin();
 
 					m_box.SetValueInGrid(parts[0], std::stoi(parts[1]), std::stoi(parts[2]), std::stoi(parts[3]));
-					if (m_box.possibleForBox == 1)
-					{
-						// close reader
-						exit(1);
-					}
+					//if (m_box.possibleForBox == 1)
+					//{
+					//	// close reader
+					//	exit(1);
+					//}
 				}
 			}
             break;

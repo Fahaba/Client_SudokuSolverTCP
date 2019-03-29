@@ -171,11 +171,6 @@ std::vector<newVal> Box::CalculatePossibleValues()
     // for each line in box
     for (int boxRow = offsetxy.first; boxRow < offsetxy.first + 3; boxRow++)
     {
-        if (possibleForBox == 1)
-        {
-            break;
-        }
-
         // for each cell in line of box
         for (int boxCell = offsetxy.second; boxCell < offsetxy.second + 3; boxCell++)
         {
@@ -244,6 +239,7 @@ std::vector<newVal> Box::CalculatePossibleValues()
         }
     }
 	// send result (and close box)
+	std::cout << possibleForBox << " possible";
 	SendToNeighbors(newValues, possibleForBox == 0 ? true : false);
     return newValues;
 }
@@ -436,6 +432,17 @@ void Box::SendToNeighbors(std::vector<newVal> newValues, bool finished)
 {
     std::stringstream ss;
 
+	for (auto val : newValues)
+	{
+		ss = std::stringstream();
+		ss << "/HandleAddFeed.php?message=";
+		ss << m_name;
+		ss << "," << val.x << "," << val.y << "," << val.val;
+		std::string response;
+		HttpReq("GET", "127.0.0.1", 80, ss.str().c_str(), NULL, response);
+		// do s.th with response?
+	}
+
 	if (finished)
 	{
 		ss = std::stringstream();
@@ -455,17 +462,6 @@ void Box::SendToNeighbors(std::vector<newVal> newValues, bool finished)
 		HttpReq("GET", "127.0.0.1", 80, ss.str().c_str(), NULL, response);
 
 		// close box
-		exit(1);
+		//WSACleanup();
 	}
-
-    for (auto val : newValues)
-    {
-        ss = std::stringstream();
-		ss << "/HandleAddFeed.php?message=";
-        ss << m_name;
-        ss << "," << val.x << "," << val.y << "," << val.val;
-		std::string response;
-		HttpReq("GET", "127.0.0.1", 80, ss.str().c_str(), NULL, response);
-		// do s.th with response?
-    }
 }

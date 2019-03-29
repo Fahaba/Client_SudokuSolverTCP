@@ -13,7 +13,7 @@ public class TaskStreamCopyHelper extends Thread{
         while (true)
         {
             try {
-                sleep(3000);
+                sleep(100);
                 IOUtils.copy(p.getInputStream(), System.out);
             } catch (InterruptedException e) {
                 e.printStackTrace();

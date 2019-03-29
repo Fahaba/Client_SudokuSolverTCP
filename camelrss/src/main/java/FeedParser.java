@@ -3,8 +3,6 @@ import org.apache.camel.*;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.impl.DefaultCamelContext;
 import org.apache.camel.impl.DefaultExchange;
-import org.apache.camel.json.simple.JsonArray;
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.w3c.dom.Document;
@@ -24,6 +22,9 @@ public class FeedParser {
     public static String mqtt_ip;
     public static int mqtt_port;
     public static String boxName;
+    public static String SpringURI;
+    public static String RssURI;
+    public static String exePath;
 
     public static String processToRss(String messageBody){
 
@@ -98,8 +99,8 @@ public class FeedParser {
                     String resRaw = resultTest[1];
                     String[] resSplitted = resultTest[1].split(",");
 
-//                    if (!resSplitted[0].equalsIgnoreCase(boxName))
-//                        return null;
+                    if (!resSplitted[0].equalsIgnoreCase(boxName))
+                        return "";
 
                     String finishedBox = "sudoku/" + resSplitted[0];
                     String result = resSplitted[1];
@@ -119,28 +120,18 @@ public class FeedParser {
                     try {
                         new DefaultCamelContext().addRoutes(new RouteBuilder() {
                             public void configure() throws Exception {
-
                                 ProducerTemplate template = this.getContext().createProducerTemplate(0);
                                 Exchange ex = new DefaultExchange(this.getContext());
                                 ex.getIn().setBody(jsonString);
 
-                                template.send("http://127.0.0.1:4242/api/result", ex);
-//                                from("direct:start")
-//                                        .setHeader(Exchange.HTTP_METHOD, constant("POST"))
-//                                        .setHeader(Exchange.CONTENT_TYPE, constant("application/json"))
-//                                        .process(new Processor() {
-//                                            public void process(Exchange exchange) throws Exception {
-//                                                exchange.getOut().setBody(jsonString);
-//                                            }
-//                                        })
-//                                        .to("http://127.0.0.1:4242/api/result");
+                                template.send(SpringURI+"/api/result", ex);
                             }
                         });
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-
-                    System.exit(1);
+                    return null;
+                    //System.exit(1);
                 }
 
                 String[] msgarr = itemValue.split("\n")[3].split(",");
@@ -151,10 +142,6 @@ public class FeedParser {
                 json.put("value", msgarr[3]);
 
                 return json.toString();
-                //arr.put(json);
-                // send this
-                //CamelContext context = new DefaultCamelContext();
-
             }
         }
         // no new messages
