@@ -333,7 +333,7 @@ HRESULT CRssReader::Parse()
 			// maybe check for old entries first
 			if (!shouldStop)
 			{
-				wprintf(L"Text: %s\n", pwszValue);
+				//wprintf(L"Text: %s\n", pwszValue);
 				// handle messages 
 
 				char ch[260];

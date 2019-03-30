@@ -239,7 +239,6 @@ std::vector<newVal> Box::CalculatePossibleValues()
         }
     }
 	// send result (and close box)
-	std::cout << possibleForBox << " possible";
 	SendToNeighbors(newValues, possibleForBox == 0 ? true : false);
     return newValues;
 }
@@ -461,7 +460,7 @@ void Box::SendToNeighbors(std::vector<newVal> newValues, bool finished)
 		std::string response;
 		HttpReq("GET", "127.0.0.1", 80, ss.str().c_str(), NULL, response);
 
-		// close box
-		//WSACleanup();
+		/*std::cout << "System finished Job, closing..." << std::endl;
+		exit(1);*/
 	}
 }

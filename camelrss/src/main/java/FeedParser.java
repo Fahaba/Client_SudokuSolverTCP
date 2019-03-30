@@ -68,7 +68,7 @@ public class FeedParser {
     }
 
     public static String processValues(String messageBody) throws IOException, SAXException, ParserConfigurationException, JSONException {
-
+        System.err.println("processValues!!!!!!!!!!!!!!!!!!!!");
         DOMParser parser = new DOMParser();
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -81,26 +81,36 @@ public class FeedParser {
         Document doc = parser.getDocument();
         JSONObject json = new JSONObject();
         NodeList list = doc.getElementsByTagName("item");
+
         for (int i = 0; i < list.getLength(); i++)
         {
             String itemValue = list.item(i).getTextContent();
+            System.err.println(itemValue);
+
             // send to mqtt server
             int messageIndex = Integer.parseInt(itemValue.split("\n")[1].split(":")[1]);
+            System.err.println(messageIndex + " > " + latestMessage);
             if (messageIndex > latestMessage)
             {
+                // sometimes there is ONE empty message in Feed
+                if (itemValue.split("\n")[3].trim() == "")
+                    continue;
+
                 // send new value
                 latestMessage = messageIndex;
                 System.out.println(latestMessage);
 
                 String[] resultTest = itemValue.split("\n")[3].split(":");
-                if (resultTest[0].trim().equals("RESULT"))
+                System.err.println(resultTest[0]);
+                String RESULT = resultTest[0].trim();
+                if (RESULT.equals("RESULT"))
                 {
-                    System.err.println(resultTest[0]);
+                    System.err.println("RESULT TEST IS:    " + RESULT);
                     String resRaw = resultTest[1];
-                    String[] resSplitted = resultTest[1].split(",");
+                    String[] resSplitted = resultTest[1].trim().split(",");
 
-                    if (!resSplitted[0].equalsIgnoreCase(boxName))
-                        return "";
+                    //if (!resSplitted[0].equalsIgnoreCase(boxName))
+                    //    continue;
 
                     String finishedBox = "sudoku/" + resSplitted[0];
                     String result = resSplitted[1];
@@ -130,18 +140,22 @@ public class FeedParser {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                    return null;
+                    // eventually exit programm?
                     //System.exit(1);
+                    continue;
+                } else {
+
+                    String[] msgarr = itemValue.split("\n")[3].split(",");
+                    System.err.println(msgarr[0]);
+                    System.err.println("   " + msgarr[1]);
+                    System.err.println("   " + msgarr[2]);
+                    json.put("box", "sudoku/" + msgarr[0].toLowerCase().trim());
+                    json.put("r_column", msgarr[2]);
+                    json.put("r_row", msgarr[1]);
+                    json.put("value", msgarr[3]);
+
+                    return json.toString();
                 }
-
-                String[] msgarr = itemValue.split("\n")[3].split(",");
-
-                json.put("box", "sudoku/" + msgarr[0].toLowerCase().trim());
-                json.put("r_column", msgarr[2]);
-                json.put("r_row", msgarr[1]);
-                json.put("value", msgarr[3]);
-
-                return json.toString();
             }
         }
         // no new messages
